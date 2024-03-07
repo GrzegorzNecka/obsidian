@@ -1,2 +1,2 @@
-# 2- Zarządzanie stanem: Stan lokalny i współdzielony
+# 2 - Zarządzanie stanem: Stan lokalny i współdzielony
 
