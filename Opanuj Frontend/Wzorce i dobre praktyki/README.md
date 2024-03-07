@@ -1,2 +1,0 @@
-# Wzorce i dobre praktyki
-

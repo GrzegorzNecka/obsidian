@@ -204,6 +204,7 @@ Czy kod może wykorzystywać poprawne nazewnictwo, nowoczesne konstrukcje język
 
 Kiedy do rozwiązywania określonych problemów stosujemy nieproporcjonalnie skomplikowane struktury danych, wyrażenia czy algorytmy, to złożoność kodu rośnie. To coś, co **przekłada się negatywnie** na długoterminowe utrzymanie projektu, efektywność współpracy zespołowej i skuteczne rozwiązywanie bugów na produkcji.
 
+
 W przypadku wcześniej zaprezentowanej funkcji, złożoność wzrasta tam, gdzie zamiast _string templates_ decydujemy się na obiekty, pętle i dodatkowe, zupełnie zbędne operacje na danych:
 
 ```ts
@@ -251,13 +252,13 @@ Jeśli opanowaliśmy sztukę pisania kodu czytelnego, wykorzystującego nowoczes
 
 > “The primary feature for easy maintenance is **locality**: Locality is that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it.” - [Richard Gabriel](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf)
 
-Dwie bliskie sobie reguły, które warto stosować, to “Locality of Behavior” oraz “Proximity Principle”. Chociaż moglibyśmy je rozpatrywać osobno, to w uproszczeniu sprowadzają się one do dwóch punktów:
+Dwie bliskie sobie reguły, które warto stosować, to #Locality_of_Behavior oraz 
+#Proximity_Principle
+”. Chociaż moglibyśmy je rozpatrywać osobno, to w uproszczeniu sprowadzają się one do dwóch punktów:
 
 - utrzymuj **możliwie blisko siebie** te fragmenty projektu, które są ze sobą ściśle powiązane i zmieniają się w tym samym tempie
     
-
 - **redukuj do minimum** akcje i działania potrzebne do zrozumienia danego fragmentu projektu
-    
 
 Wyobraźmy sobie, że rozwijamy formularz do obsługi zamówień w sklepie internetowym. Kod utrzymywany w zgodzie z regułą bliskości powinien nam umożliwiać wprowadzanie zmian na maksymalnie małym obszarze projektu, często nawet w obrębie jednego folderu. W nim moglibyśmy znaleźć:
 
@@ -265,7 +266,6 @@ Wyobraźmy sobie, że rozwijamy formularz do obsługi zamówień w sklepie inter
     
 - style wpływające na wygląd formularza
     
-
 - testy weryfikujące najważniejsze aspekty działania formularza
     
 - interfejsy i typy danych, jakimi posługujemy się w formularzu
@@ -281,7 +281,9 @@ Taka organizacja projektu pozwala w łatwy sposób zrozumieć granice odpowiedzi
 
 ### Klasyczne praktyki czystego kodu - DRY, SOLID, CUPID
 
-**DRY**, czyli “Don’t Repeat Yourself” to jedna z najbardziej popularnych rekomendacji w świecie programowania.
+
+
+**#DRY**, czyli Dont Repeat Yourself to jedna z najbardziej popularnych rekomendacji w świecie programowania.
 
 W założeniu jej przesłanie jest jak najbardziej rozsądne - unikaj powtórzeń, buduj możliwe do ponownego użycia funkcje, moduły i biblioteki, oszczędzaj czas wprowadzając zmiany tylko w jednym miejscu. W przypadku prostych projektów to powinno zdecydowanie wystarczyć.
 
@@ -289,7 +291,7 @@ W praktyce okazuje się jednak, że do DRY powinniśmy podchodzić pragmatycznie
 
 DRY można też wprowadzać stopniowo. Nie zawsze trzeba zaczynać od budowania prawdziwie reużywalnej, możliwej do pobrania biblioteki, którą umieścimy na zewnątrz projektu. Jeśli algorytm w projekcie powtarza się dwa razy, to można zacząć od przesunięcia go do dedykowanego modułu, który następnie dwukrotnie zaimportujemy. Oszczędzimy czas, unikniemy duplikacji i zyskamy moment na lepszą ocenę sytuacji.
 
-**SOLID** to z kolei zestaw pięciu zasad projektowania oprogramowania, które mówią o tym, że:
+**#SOLID** to z kolei zestaw pięciu zasad projektowania oprogramowania, które mówią o tym, że:
 
 - Funkcja lub moduł powinny realizować jedno zadanie (Single Responsibility Principle)
     
@@ -308,7 +310,7 @@ Jeśli reguły **SOLID** uważasz za mało przekonujące lub nie do końca odpow
 
 W przeciwieństwie do mocno określonych zasad SOLIDnej piątki, CUPID to przede wszystkim “doświadczenia” i kierunek, w którym możesz stopniowo podążać refaktoryzując twój kod.
 
-Autor podejścia CUPID, Dan North, wyjaśnia to w ten sposób:
+Autor podejścia #CUPID, Dan North, wyjaśnia to w ten sposób:
 
 > “Properties define a goal or centre to move towards. Your code is only closer to or further from the centre, and there is always a clear direction of travel. You can use properties as a lens or filter to assess your code and you can decide which ones to address next.” - Dan North
 
@@ -345,7 +347,7 @@ To nic innego jak trzy rekomendacje w jednym:
     
 - Domain-based naming (CUPID)
     
-
+![[Pasted image 20240307145836.png]]
 Planowanie nawet najprostszej struktury aplikacji to ćwiczenie, na które warto zdecydować się na początkowych etapach projektu. Pozwoli nam to określić konsekwencje takiego, a nie innego układu komponentów. Odkryjemy również wymagania związane ze stanem i przepływem danych, a cały zespół uzyska wspólne zrozumienie decyzji wpływających na skuteczne realizowanie projektu. Tę tematykę pogłębimy w ostatnim module poświęconym architekturze na frontendzie, a już w kolejnych lekcjach zobaczysz różne podejścia do zarządzania stanem, wynikające wprost z układu komponentów względem siebie.
 
 A jeśli budujemy komunikację z API? Czy naprawdę biblioteki takie jak _axios_ lub _superagent_ powinny na nas wymuszać związanie się z nimi już na zawsze? Co w przypadku natywnego API _fetch_, które w pewnym momencie zaczęło być obowiązującym standardem? To właśnie czysty kod i wspomniane wyżej wzorce decydują o łatwości migracji do nowych standardów.

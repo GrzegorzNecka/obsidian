@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7019a20a78754a73",
+        "id": "f02c4f8c8f23661f",
         "type": "tabs",
         "children": [
           {
-            "id": "729664b41d3a50b0",
+            "id": "41218ddab318075b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/1 - Czysty kod na frontendzie.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,15 +23,12 @@
             "id": "38ba35c526e16f20",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/1 - Czysty kod na frontendzie.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Locality_of_Behavior",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/1 - Czysty kod na frontendzie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/1 - Czysty kod na frontendzie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,18 +131,15 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/1 - Czysty kod na frontendzie.md"
-              }
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,13 +152,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "729664b41d3a50b0",
+  "active": "38ba35c526e16f20",
   "lastOpenFiles": [
+    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/Zarzadzanie stanem.md",
+    "Assets",
+    "Assets/Pasted image 20240307145836.png",
+    "07-54-2024.md",
+    "Bez nazwy.canvas",
+    "SUMMARY.md",
+    "Pasted image 20240307114229.png",
+    "README.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/README.md",
+    "Opanuj Frontend/README.md",
     "Opanuj Frontend/Wzorce i dobre praktyki",
     "Wzorce i dobre praktyki.md",
-    "Opanuj Frontend/Wzorce i dobre praktyki/1 - Czysty kod na frontendzie.md",
     "Opanuj Frontend",
-    "Bez nazwy.canvas",
     "07-35-2024.md",
     "Bez nazwy 1.canvas",
     "07-20-2024.md",

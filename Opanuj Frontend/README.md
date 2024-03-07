@@ -1,2 +1,0 @@
-# Opanuj Frontend
-
