@@ -204,6 +204,7 @@ Czy kod może wykorzystywać poprawne nazewnictwo, nowoczesne konstrukcje język
 
 Kiedy do rozwiązywania określonych problemów stosujemy nieproporcjonalnie skomplikowane struktury danych, wyrażenia czy algorytmy, to złożoność kodu rośnie. To coś, co **przekłada się negatywnie** na długoterminowe utrzymanie projektu, efektywność współpracy zespołowej i skuteczne rozwiązywanie bugów na produkcji.
 
+![[Pasted image 20240308144046.png]]
 
 W przypadku wcześniej zaprezentowanej funkcji, złożoność wzrasta tam, gdzie zamiast _string templates_ decydujemy się na obiekty, pętle i dodatkowe, zupełnie zbędne operacje na danych:
 
@@ -516,6 +517,8 @@ Tak się składa, że unikalne wyzwania i cechy charakterystyczne dla tej warstw
 
 Chociaż szczegółowo w temat wzorców wejdziemy w kolejnych lekcjach, to na wstępnie chcielibyśmy krótko uzasadnić potrzebę ich stosowania w codziennej pracy:
 
+![[Pasted image 20240308143937.png]]
+
 - **Zarządzanie stanem** - Frontend często musi radzić sobie z dynamicznie zmieniającym się stanem aplikacji, który jest reakcją na interakcje użytkownika oraz dane przychodzące z backendu. Wzorce takie jak Flux lub Redux pomagają w organizacji i przewidywaniu zmian w stanie, zapewniając jednokierunkowy przepływ danych. To z kolei ułatwia śledzenie, debugowanie i testowanie stanu aplikacji.
     
 - **Reakcja na zdarzenia** - Frontend wymaga obsługi zdarzeń generowanych przez użytkownika (np. kliknięcia, przewijanie) oraz na skutek śledzenia zewnętrznych źródeł danych. Wzorce takie jak Obserwator lub Pub/Sub umożliwiają zarządzanie tymi zdarzeniami w sposób zdecentralizowany, bez konieczności tworzenia skomplikowanych łańcuchów zależności między komponentami.
@@ -536,6 +539,8 @@ Oba podejścia mają swoje plusy i minusy, a szczegóły poznasz poniżej:
 ### **Podejście “Top-down”**
 
 Na całościowe przepisanie aplikacji decydujemy się zazwyczaj wtedy, kiedy sytuacja jest naprawdę poważna, lub kiedy chcemy wprowadzić radykalne usprawnienia np. na poziomie stacku technologicznego (wymiana frameworka). W tym podejściu nowa, ulepszona wersja aplikacji powstaje niezależnie od tej wdrożonej na produkcji. W momencie, kiedy funkcjonalności są odwzorowane 1:1 można zadecydować o zastąpieniu poprzedniej wersji aplikacji tą nową, z lepszą architekturą lub nowoczesnymi fundamentami.
+
+![[Pasted image 20240308143958.png]]
 
 **Plusy tego podejścia:**
 
@@ -558,6 +563,8 @@ Na całościowe przepisanie aplikacji decydujemy się zazwyczaj wtedy, kiedy syt
 ### **Podejście “Bottom-up”**
 
 W tym podejściu core naszej aplikacji pozostaje stabilny, a my skupiamy się na ulepszaniu najmniejszych możliwych elementów aplikacji. W przypadku frontendu i interfejsów użytkownika, dobrze rozumianą granicą zmian jest poziom pojedynczego komponentu. Oczywiście nie musimy pozostać na jednym komponencie, ale możemy tutaj zmieniać zestaw kilku współpracujących ze sobą elementów.
+
+![[Pasted image 20240308144014.png]]
 
 **Plusy tego podejścia:**
 
