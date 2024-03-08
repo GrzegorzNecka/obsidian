@@ -1,2 +1,2 @@
-Zarządzanie stanem: Stan lokalny i współdzielony
+#CUPID Zarządzanie stanem: Stan lokalny i współdzielony
 
