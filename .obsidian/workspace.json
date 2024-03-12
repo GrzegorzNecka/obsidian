@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md"
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md"
               }
             }
           }
@@ -156,14 +156,21 @@
   },
   "active": "41218ddab318075b",
   "lastOpenFiles": [
-    "Stripe/Stripe CLI.md",
+    "Git/łączenie commitów.md",
+    "Git/git log.md",
+    "Git/nadpisanie commita.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/Zarzadzanie stanem.md",
+    "Git/git merge.md",
+    "Assets/Pasted image 20240312085346.png",
+    "Assets/Pasted image 20240312085141.png",
+    "Git",
     "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
+    "Stripe/Stripe CLI.md",
     "Bez nazwy.md",
     "Stripe",
-    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
     "Next Masters/Środowisko Next.js/2.4 Poisoning i serializacja.md",
     "Next Masters/Środowisko Next.js/2.1 App Router.md",
-    "Opanuj Frontend/Wzorce i dobre praktyki/Zarzadzanie stanem.md",
     "Next Masters/Środowisko Next.js/1.3 Wtyczki VSCode.md",
     "Next Masters/Środowisko Next.js/1.2 Konfiguracja środowiska pracy.md",
     "Assets/Pasted image 20240308144046.png",
@@ -190,13 +197,8 @@
     "Next Masters",
     "Assets",
     "Assets/Pasted image 20240307145836.png",
-    "07-54-2024.md",
     "Bez nazwy.canvas",
-    "SUMMARY.md",
     "Pasted image 20240307114229.png",
-    "README.md",
-    "Opanuj Frontend/Wzorce i dobre praktyki/README.md",
-    "Opanuj Frontend/README.md",
     "Bez nazwy 1.canvas"
   ]
 }
