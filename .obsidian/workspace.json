@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+                "file": "VsCode/skróty klawiszowe.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+                "file": "VsCode/skróty klawiszowe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+                "file": "VsCode/skróty klawiszowe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md"
+                "file": "VsCode/skróty klawiszowe.md"
               }
             }
           }
@@ -156,15 +156,17 @@
   },
   "active": "41218ddab318075b",
   "lastOpenFiles": [
-    "Git/łączenie commitów.md",
-    "Git/git log.md",
-    "Git/nadpisanie commita.md",
-    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
     "Opanuj Frontend/Wzorce i dobre praktyki/Zarzadzanie stanem.md",
+    "VsCode/skróty klawiszowe.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+    "VsCode",
+    "Git/nadpisanie commita.md",
+    "Git/łączenie commitów.md",
     "Git/git merge.md",
+    "Git/git log.md",
+    "Git",
     "Assets/Pasted image 20240312085346.png",
     "Assets/Pasted image 20240312085141.png",
-    "Git",
     "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
     "Stripe/Stripe CLI.md",
     "Bez nazwy.md",
