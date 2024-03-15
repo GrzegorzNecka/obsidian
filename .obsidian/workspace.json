@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem Stan lokalny i współdzielony.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem Stan lokalny i współdzielony.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem Stan lokalny i współdzielony.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md"
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem Stan lokalny i współdzielony.md"
               }
             }
           }
@@ -156,6 +156,7 @@
   },
   "active": "41218ddab318075b",
   "lastOpenFiles": [
+    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
     "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem Stan lokalny i współdzielony.md",
     "VsCode/skróty klawiszowe.md",
     "Assets/Pasted image 20240313124324.png",
@@ -166,7 +167,6 @@
     "Assets/Pasted image 20240313124337.png",
     "Assets/Pasted image 20240313124250.png",
     "VsCode",
-    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
     "Git/łączenie commitów.md",
     "Git/git log.md",
     "Git/nadpisanie commita.md",
