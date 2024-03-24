@@ -3,7 +3,7 @@
 
 ### **Czym jest stan w programowaniu?**
 
-#Stan w kontekście programowania to pojęcie odnoszące się do przechowywania informacji o bieżących warunkach lub sytuacji, w której znajduje się aplikacja lub jej część. **Jest to zbiór zmiennych, wartości, informacji, które aplikacja "pamięta" w trakcie swojego działania**.
+Stan w kontekście programowania to pojęcie odnoszące się do przechowywania informacji o bieżących warunkach lub sytuacji, w której znajduje się aplikacja lub jej część. **Jest to zbiór zmiennych, wartości, informacji, które aplikacja "pamięta" w trakcie swojego działania**.
 
 Stan determinuje, w jaki sposób program reaguje na różne dane wejściowe lub zdarzenia w danym momencie.
 
@@ -113,7 +113,7 @@ W kontekście frontendowym, stan można generalnie podzielić na trzy główne k
 
 ![[Pasted image 20240313124337.png]]
 
-**Stan lokalny (Stan UI)**: Dotyczy danych związanych bezpośrednio z danym komponentem interfejsu użytkownika. Jest to stan wewnętrzny, który kontroluje zachowanie i wygląd pojedynczego komponentu. Przykłady:
+** #Stan_lokalny (Stan UI)**: Dotyczy danych związanych bezpośrednio z danym komponentem interfejsu użytkownika. Jest to stan wewnętrzny, który kontroluje zachowanie i wygląd pojedynczego komponentu. Przykłady:
 
 - Wartość wprowadzana w polu formularza.
     
@@ -122,7 +122,7 @@ W kontekście frontendowym, stan można generalnie podzielić na trzy główne k
 - Informacja o tym, czy dany element UI, np. modal, jest aktualnie widoczny.  
     
 
-**Stan współdzielony**: Odnosi się do danych, które są wykorzystywane przez kilka komponentów współtworzących bardziej złożoną funkcję, np. koszyk zakupowy. Przykłady:
+** #Stan_współdzielony**: Odnosi się do danych, które są wykorzystywane przez kilka komponentów współtworzących bardziej złożoną funkcję, np. koszyk zakupowy. Przykłady:
 
 - Stan wyboru w komponencie nawigacyjnym, który wpływa na zawartość wyświetlaną w głównym widoku.
     
@@ -130,29 +130,26 @@ W kontekście frontendowym, stan można generalnie podzielić na trzy główne k
     
 - Stan ładowania danych
     
-
   
-**Stan globalny**: Obejmuje dane, które są istotne dla wielu różnych części aplikacji i muszą być dostępne globalnie. Zarządzanie takim stanem często wymaga użycia specjalistycznych bibliotek takich jak Redux, NGRX czy Vuex. Przykłady:
+** #Stan_globalny**: Obejmuje dane, które są istotne dla wielu różnych części aplikacji i muszą być dostępne globalnie. Zarządzanie takim stanem często wymaga użycia specjalistycznych bibliotek takich jak Redux, NGRX czy Vuex. Przykłady:
 
 - Status sesji użytkownika, to czy jest zalogowany i jakie ma uprawnienia dostępowe.
     
 - Preferencje użytkownika, czyli ustawienia związane z motywem (ciemny/jasny).
     
 - Kluczowe dane domenowe (np. lista zadań w Todo app), z których korzysta wiele funkcji aplikacji
-    
 
-  
 Każdy z tych typów stanu pełni specyficzną rolę w aplikacjach frontendowych, pomagając w organizacji logiki aplikacji i zapewnianiu spójnego, reaktywnego doświadczenia użytkownika.
 
 W tej lekcji skupimy się na zagadnieniach związanych ze stanem lokalnym oraz współdzielonym. Stan globalny omówimy w kolejnej lekcji.
 
 ### Frameworki UI a zarządzanie stanem
 
-Manipulowanie Document Object Model (DOM) w sposób bezpośredni, zwłaszcza w nowoczesnych, interaktywnych aplikacjach internetowych, jest kosztowne pod względem wydajności. Każda zmiana w DOM, nawet tak prosta jak aktualizacja tekstu czy zmiana stylów, może spowodować konieczność ponownego renderowania i obliczania układu strony (reflow i repaint), co jest procesem zasobożernym. W tradycyjnym podejściu, programista musiał ręcznie zarządzać tymi aktualizacjami, co jest nie tylko niewydajne, ale również podatne na błędy i trudne w utrzymaniu.
+Manipulowanie Document Object Model (DOM) w sposób bezpośredni, zwłaszcza w nowoczesnych, interaktywnych aplikacjach internetowych, jest kosztowne pod względem wydajności. Każda zmiana w DOM, nawet tak prosta jak aktualizacja tekstu czy zmiana stylów, może spowodować konieczność ponownego renderowania i obliczania układu strony ( #reflow i #repaint), co jest procesem zasobożernym. W tradycyjnym podejściu, programista musiał ręcznie zarządzać tymi aktualizacjami, co jest nie tylko niewydajne, ale również podatne na błędy i trudne w utrzymaniu.
 
 **Frameworki jako Abstrakcja nad DOM**
 
-Frameworki frontendowe takie jak React, Vue i Angular, oferują warstwę abstrakcji nad bezpośrednią manipulacją DOM. Pozwalają one na skupienie się na logice biznesowej i zarządzaniu stanem aplikacji, podczas gdy szczegóły dotyczące renderowania i aktualizacji DOM są obsługiwane przez framework.
+Frameworki frontendowe takie jak React, Vue i Angular, oferują warstwę abstrakcji nad bezpośrednią manipulacją #DOM. Pozwalają one na skupienie się na logice biznesowej i zarządzaniu stanem aplikacji, podczas gdy szczegóły dotyczące renderowania i aktualizacji DOM są obsługiwane przez framework.
 
 ![[Pasted image 20240313124350.png]]
 
@@ -160,7 +157,7 @@ Kluczowe zalety frameworków w kontekście zarządzania stanem:
 
 1. **Efektywne zarządzanie aktualizacjami DOM**: Frameworki używają technik takich jak wirtualny DOM (React, Vue) lub mechanizmy detekcji zmian (Angular), które minimalizują ilość interakcji z prawdziwym DOM. To optymalizuje wydajność przez ograniczenie kosztownych operacji reflow i repaint.
     
-2. **Deklaratywne UI**: Frameworki pozwalają na deklaratywne opisywanie interfejsów użytkownika, co oznacza, że programiści określają „co” ma być wyświetlone, a nie „jak” to zrobić. Logika aktualizacji UI jest automatycznie zarządzana przez framework, co upraszcza proces tworzenia interfejsu.
+2. **Deklaratywne UI**: Frameworki pozwalają na #deklaratywne opisywanie interfejsów użytkownika, co oznacza, że programiści określają „co” ma być wyświetlone, a nie „jak” to zrobić. Logika aktualizacji UI jest automatycznie zarządzana przez framework, co upraszcza proces tworzenia interfejsu.
     
 3. **Reaktywność i wiązanie danych**: Zapewniają one reaktywne wiązanie danych, co oznacza, że interfejs użytkownika automatycznie aktualizuje się w odpowiedzi na zmiany w stanie aplikacji. To sprawia, że zarządzanie dynamicznym stanem staje się bardziej intuicyjne i mniej podatne na błędy.
     
@@ -179,7 +176,7 @@ Zróbmy sobie teraz szybki przegląd podobieństw i różnic pomiędzy framework
 
 **React**
 
-W Reactcie stan lokalny jest zarządzany za pomocą hooka [_useState_](https://react.dev/reference/react/useState) w komponentach funkcyjnych lub _this.state_ w komponentach klasowych. Dzięki jawnemu wywołaniu settera zwróconego przez _useState_, React wie że doszło do aktualizacji stanu i samodzielnie dba o aktualizację DOM.
+W Reactcie stan lokalny jest zarządzany za pomocą hooka [_useState_](https://react.dev/reference/react/useState) w komponentach funkcyjnych lub _this.state_ w komponentach klasowych. Dzięki jawnemu wywołaniu #setter zwróconego przez _useState_, React wie że doszło do aktualizacji stanu i samodzielnie dba o aktualizację DOM.
 
 **Przykład z _useState_**:
 
@@ -276,7 +273,7 @@ Podział na komponenty kontenerowe i prezentacyjne to frontendowy wzorzec projek
 
 Do komponentu kontenerowego _CharacterSearchContainer_ wydzielimy nasze operacje związane z zarządzaniem stanem: pobieranie danych oraz sortowanie:
 
-```
+```ts
 import { useState, useEffect } from 'react';
 
 function CharacterSearchContainer() {
@@ -391,8 +388,7 @@ Kod po zrealizowaniu podziału na komponenty kontenerowe i prezentacyjne znajdzi
 
 Moje rozwiązanie:
 
-##   
-Prop drilling
+##   #Prop_drilling
 
 Naszym punktem wyjścia jest **examples/module1/lesson2/prop-drilling-start** czyli wyszukiwarka po wykonaniu refaktoryzacji z ćwiczenia powyżej, dzięki czemu kod jest znacznie lepiej zorganizowany oraz czytelny.
 
@@ -511,7 +507,7 @@ Context API najlepiej nadaje się do przekazywania danych, które nie zmieniają
       
     
 
-Wracając do naszej aplikacji, która jest prosta i nie posiada wielu poziomów zagnieżdżenia co uzasadniałoby wprowadzanie kontekstu. Dane formularza, które siłą rzeczy zmieniają się często, nie są rekomendowanym typem danych dla Context API. Czy z tego powodu mamy związane ręce i musimy chwytać za bibliotekę do zarządzania stanem? Bynajmniej! Więcej na ten temat w kolejnej lekcji #cliffhanger.
+Wracając do naszej aplikacji, która jest prosta i nie posiada wielu poziomów zagnieżdżenia co uzasadniałoby wprowadzanie kontekstu. Dane formularza, które siłą rzeczy zmieniają się często, nie są rekomendowanym typem danych dla Context API. Czy z tego powodu mamy związane ręce i musimy chwytać za bibliotekę do zarządzania stanem? Bynajmniej! Więcej na ten temat w kolejnej lekcji.
 
 Jak to wygląda w pozostałych frameworkach? Nie da się ukryć, że korzystniej 🙈
 
