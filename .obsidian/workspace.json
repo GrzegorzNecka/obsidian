@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#DOM",
+                "query": "tag:#WebSockets",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md",
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md"
+                "file": "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md"
               }
             }
           }
@@ -154,12 +154,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "41218ddab318075b",
+  "active": "06d8a372330a2d6f",
   "lastOpenFiles": [
-    "Pasted image 20240316220606.png",
-    "Pasted image 20240316220543.png",
     "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan lokalny i współdzielony.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md",
     "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md",
+    "Assets/Pasted image 20240316220606.png",
+    "Assets/Pasted image 20240316220543.png",
     "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
     "Next Masters/Środowisko Next.js/4.10 Zaawansowane pliki w routingu Next.js.md",
     "VsCode/Skróty klawiszowe.md",
@@ -176,7 +177,6 @@
     "Git/nadpisanie commita.md",
     "Git/git merge.md",
     "Assets/Pasted image 20240312085346.png",
-    "Assets/Pasted image 20240312085141.png",
     "Git",
     "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
     "Stripe/Stripe CLI.md",
