@@ -24,7 +24,7 @@ Sam akronim API (Application Programming Interface) nie mówi wprost, z jakiego 
 
 Dla uproszczenia ustalmy, że w tej lekcji wymiennie będziemy się posługiwać takimi terminami jak serwer, API lub backend.
 
-W każdym z tych przypadków mamy na myśli pewnego rodzaju **zasób zdalny, działający poza granicami przeglądarki, z którym interakcja odbywa się asynchronicznie**, w modelu klient-serwer. Na początku skupimy się na **==_modelu pull==**_, w którym frontend pobiera na żądanie dane z backendu, ale na końcu omówimy także **==_model push**_==, w którym to serwer decyduje o momencie publikacji informacji do klientów ( #WebSockets).
+W każdym z tych przypadków mamy na myśli pewnego rodzaju **zasób zdalny, działający poza granicami przeglądarki, z którym interakcja odbywa się asynchronicznie**, w modelu klient-serwer. Na początku skupimy się na #model_pull, w którym frontend pobiera na żądanie dane z backendu, ale na końcu omówimy także #model_push w którym to serwer decyduje o momencie publikacji informacji do klientów ( #WebSockets).
 
 ## API w aplikacjach webowych
 
@@ -63,7 +63,7 @@ W praktyce zdarza się, że od tak “książkowo” zaprojektowanego API zdarza
 
 Więcej na ten temat przeczytasz we wpisie - [Data API vs Application API](https://max.engineer/server-informed-ui)
 
-Pytaniem, które w kontekście REST API często pojawia się na rozmowach kwalifikacyjnych, jest to o różnicę pomiędzy zapytaniami POST i PUT (GET i DELETE są łatwe w odszyfrowaniu). Odpowiedzią za komplet punktów jest **idempotentność.**
+Pytaniem, które w kontekście REST API często pojawia się na rozmowach kwalifikacyjnych, jest to o różnicę pomiędzy zapytaniami POST i PUT (GET i DELETE są łatwe w odszyfrowaniu). Odpowiedzią za komplet punktów jest #idempotentność.
 
 PUT jest idempotentny, co oznacza, że wielokrotne wysyłanie tego samego żądania jest bezpieczne i powtarzane (np. typowy scenariusz - aktualizacja danych). POST nie jest idempotentny - wysyłając taki sam zestaw parametrów kilka razy, możemy się spodziewać skutków ubocznych (np. błędów pt. “użytkownik z tym adresem email już istnieje”). Przyjęło się, że PUT stosujemy właśnie w przypadku bezpiecznej aktualizacji istniejących zasobów, a POST w przypadku ich tworzenia.
 
@@ -289,7 +289,7 @@ Jej główne zalety to:
     
     - w Fetch API musimy to zrobić sami
         
-- interceptory, czyli opakowywanie zapytań i odpowiedzi z serwera
+- #interceptory, czyli opakowywanie zapytań i odpowiedzi z serwera
     
     - w Fetch API wymaga to ręcznej implementacji
         
@@ -428,11 +428,11 @@ To od ciebie zależy kto i kiedy będzie mógł wywołać funkcje “abort”. M
 
 Na końcu lekcji znajdziesz ćwiczenie, w którym przetestujesz posługiwanie się AbortControllerem.
 
-### Axios - Interceptory (Wzorzec Dekorator)
+### Axios - #interceptory  (Wzorzec Dekorator)
 
 Korzystając z axiosa warto zainteresować się wykorzystaniem tzw. Interceptorów, czyli klasycznego przypadku użycia wzorca projektowego **Dekorator**.
 
-Czym jest Dekorator? Dekorator to wzorzec, który przydaje się kiedy udostępniamy konsumentowi konkretny, zamknięty zestaw funkcjonalności (np. zestaw funkcji do zapytań HTTP), ale chcemy również umożliwić jej rozszerzanie, np. dodanie logowania do każdego zapytania. Osiągniemy to właśnie dzięki wzorcowi Dekorator, który na konkretnym przykładzie w bibliotece axios wygląda w ten sposób:
+Czym jest Dekorator? #Dekorator to wzorzec, który przydaje się kiedy udostępniamy konsumentowi konkretny, zamknięty zestaw funkcjonalności (np. zestaw funkcji do zapytań HTTP), ale chcemy również umożliwić jej rozszerzanie, np. dodanie logowania do każdego zapytania. Osiągniemy to właśnie dzięki wzorcowi Dekorator, który na konkretnym przykładzie w bibliotece axios wygląda w ten sposób:
 
 ```javascript
 import axios from 'axios';
@@ -473,7 +473,7 @@ Obiekty takie jak **fetch** i **axios** często nazywa się **klientami HTTP**.
 
 Zdarza się, że rozbudowywane konfiguracje klientów HTTP są ukrywane w dedykowanych modułach, a programiści nie pracują z surową wersją biblioteki, a właśnie wersją rozszerzoną. Jak takie rozszerzenie przygotować? Jednym z wcześniej zaprezentowanych rozwiązań są interceptory, ale można do tego celu wykorzystać także wbudowany obiekt **Proxy.**
 
-Jak działa Proxy? Stwórzmy prostą klasę i jej rozszerzenie przez Proxy:
+Jak działa #Proxy? Stwórzmy prostą klasę i jej rozszerzenie przez Proxy:
 
 ```javascript
 class User {
@@ -537,6 +537,8 @@ fetchProxy('/api/users.json')
 
 Korzystając z **fetchProxy**, nasze zapytania będą wzbogacone o nowy nagłówek, który możemy czytać na backendzie, a o którym frontend developer nie musi pamiętać:
 
+![[Pasted image 20240430113420.png]]
+
 Co ważne, w takim podejściu nie modyfikujemy wbudowanego w przeglądarkę obiektu **fetch** (bardzo zła praktyka, niestety wciąż spotykana na frontendzie), ale uzyskujemy jego alternatywną wersję.
 
 ## Zapytania HTTP w popularnych frameworkach
@@ -557,11 +559,11 @@ Angular promuje filozofię “batteries included”, dostarczając programistom 
 
 **HttpClient** jest ściśle zintegrowany z biblioteką RxJS, co oznacza, że operacje HTTP zwracają obiekty typu Observable służące do obsługi asynchronicznych strumieni danych. Pozwala to na łatwe stosowanie operatorów RxJS do transformacji, filtrowania i łączenia zapytań HTTP z innymi typami zdarzeń. Wbudowany klient HTTP jest projektowany z myślą o integracji z innymi funkcjami Angulara, takimi jak system Dependency Injection (DI), co ułatwia zarządzanie zależnościami i konfiguracją.
 
-## Inny model komunikacji - WebSockets
+## Inny model komunikacji - #WebSockets 
 
-Wszystko to, co opisaliśmy do tej pory, zakłada jednokierunkową komunikację w modelu “pull”. Pobieramy z serwera kolejne dane, a użytkownik i warstwa client-side decydują o tym, kiedy to nastąpi.
+Wszystko to, co opisaliśmy do tej pory, zakłada jednokierunkową komunikację w #model_pull . Pobieramy z serwera kolejne dane, a użytkownik i warstwa client-side decydują o tym, kiedy to nastąpi.
 
-Kierunek komunikacji można rozszerzyć dzięki WebSocketom, które umożliwiają dwustronną komunikację w modelu “push” opartym o publikowanie zdarzeń z serwera do nasłuchujących klientów. W przeciwieństwie do tradycyjnego modelu zapytania i odpowiedzi HTTP, gdzie każda akcja użytkownika wymaga nowego żądania do serwera, WebSockety utrzymują otwarte połączenie pomiędzy warstwami.
+Kierunek komunikacji można rozszerzyć dzięki WebSocketom, które umożliwiają dwustronną komunikację w #model_push  opartym o publikowanie zdarzeń z serwera do nasłuchujących klientów. W przeciwieństwie do tradycyjnego modelu zapytania i odpowiedzi HTTP, gdzie każda akcja użytkownika wymaga nowego żądania do serwera, WebSockety utrzymują otwarte połączenie pomiędzy warstwami.
 
 Absolutnym liderem w tym obszarze jest biblioteka [Socket.IO](https://socket.io/) (sprawdź także [PartyKit](https://www.partykit.io/) oraz [Liveblocks](https://liveblocks.io/)).
 
@@ -593,7 +595,7 @@ Absolutnym liderem w tym obszarze jest biblioteka [Socket.IO](https://socket.io/
 
 Rozwijając i utrzymując na produkcji aplikacje webowe, szczególnie te, w których sesja użytkownika trwa więcej niż kilka sekund, warto pamiętać o potencjalnych konfliktach na styku backendu i frontendu. Jeden z takich konfliktów i jego rozwiązanie zobaczysz na poniższym filmie:
 
-📝 Ten przykład znajdziesz w folderze **_examples/module1/lesson4/api-contract_**.
+📝 Ten przykład znajdziesz w folderze ==**_examples/module1/lesson4/api-contract_**==.
 
 **Kto i kiedy ma obsługiwać błędy na styku frontendu i backendu?**
 

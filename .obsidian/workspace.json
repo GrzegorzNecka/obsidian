@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f02c4f8c8f23661f",
+        "id": "06c99abead0762ba",
         "type": "tabs",
         "children": [
           {
-            "id": "41218ddab318075b",
+            "id": "a1bab0fcb4d9bc38",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -154,14 +154,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "06d8a372330a2d6f",
+  "active": "a1bab0fcb4d9bc38",
   "lastOpenFiles": [
     "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan lokalny i współdzielony.md",
     "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md",
     "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md",
+    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
+    "Assets/Pasted image 20240430113420.png",
     "Assets/Pasted image 20240316220606.png",
     "Assets/Pasted image 20240316220543.png",
-    "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
     "Next Masters/Środowisko Next.js/4.10 Zaawansowane pliki w routingu Next.js.md",
     "VsCode/Skróty klawiszowe.md",
     "Assets/Pasted image 20240313124324.png",
@@ -176,7 +177,6 @@
     "Git/git log.md",
     "Git/nadpisanie commita.md",
     "Git/git merge.md",
-    "Assets/Pasted image 20240312085346.png",
     "Git",
     "Next Masters/Środowisko Next.js/4.9 Płatności przez Stripe.md",
     "Stripe/Stripe CLI.md",
@@ -197,7 +197,6 @@
     "Next Masters/Środowisko Next.js/2.8 Statyczne Generowanie.md",
     "Next Masters/Środowisko Next.js/2.7 Async komponenty.md",
     "Next Masters/Środowisko Next.js/2.6 Link.md",
-    "Next Masters/Środowisko Next.js/2.5 Dynamiczne adresy.md",
     "Excalidraw",
     "Next Masters",
     "Assets",
