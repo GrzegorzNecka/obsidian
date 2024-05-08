@@ -404,7 +404,7 @@ Przykładowo, kiedy budujemy dużą aplikację do wyszukiwania danych, użytkown
 
 📝 Ten przykład znajdziesz w folderze **_examples/module1/lesson4/abort-controller_**.
 
-Aby lepiej zarządzać równoległymi i już trwającymi zapytaniami, możemy wykorzystać wbudowany w przeglądarkę AbortController (którego wsparcie przewiduje również Fetch API).
+Aby lepiej zarządzać równoległymi i już trwającymi zapytaniami, możemy wykorzystać wbudowany w przeglądarkę #AbortController (którego wsparcie przewiduje również Fetch API).
 
 ```javascript
 import axios from 'axios';
@@ -626,7 +626,7 @@ Wybór między Data API a Application API powinien być podyktowany specyfiką p
 
 **Design for failure**
 
-Design for Failure na frontendzie to podejście, które zakłada, że błędy, awarie i nieprzewidziane sytuacje **są nieuniknioną częścią działania aplikacji webowej**. Zamiast próbować stworzyć system, który nigdy nie zawiedzie (co jest praktycznie niemożliwe), powinieneś skupić się na tworzeniu rozwiązań, które potrafią elegancko radzić sobie z problemami, minimalizując ich wpływ na użytkownika końcowego.
+#Design_for_Failure na frontendzie to podejście, które zakłada, że błędy, awarie i nieprzewidziane sytuacje **są nieuniknioną częścią działania aplikacji webowej**. Zamiast próbować stworzyć system, który nigdy nie zawiedzie (co jest praktycznie niemożliwe), powinieneś skupić się na tworzeniu rozwiązań, które potrafią elegancko radzić sobie z problemami, minimalizując ich wpływ na użytkownika końcowego.
 
 Pierwszym krokiem w implementacji Design for Failure jest rozpoznanie **potencjalnych punktów awarii w aplikacji**. Może to być na przykład nieudane zapytanie do API, błąd ładowania zasobu, czy nieprzewidziane zachowanie użytkownika. Dla każdego z tych scenariuszy, warto zaimplementować mechanizmy łagodzenia skutków, takie jak wyświetlanie wiadomości o błędzie, zapewnienie opcji ponownego wczytania zasobu, czy zastosowanie domyślnych wartości, które umożliwią dalsze korzystanie z aplikacji.
 
