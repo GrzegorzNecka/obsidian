@@ -1,221 +1,220 @@
 {
-    "active": "1cfa0e8b08ba1a18",
-    "lastOpenFiles": [
-        "Next Masters/Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
-        "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
-        "Bez nazwy 1.md",
-        "Bez nazwy 2.md",
-        "Next Masters/Zaawansowane aspekty Next.js 14/4.9 Płatności przez Stripe.md",
-        "Next Masters/Architektura App Router/2.9 SEO i MDX.md",
-        "Next Masters/Zaawansowane aspekty Next.js 14/4.11 Parallel intercepting routes.md",
-        "Bez nazwy.md",
-        "Next Masters/Architektura App Router",
-        "Next Masters/Zaawansowane aspekty Next.js 14",
-        "4.12 Kompletny kod mutacji z tego działu.md",
-        "Next Masters/Zaawansowane aspekty Next.js 14/4.10 Zaawansowane pliki w routingu Next.js.md",
-        "Opanuj Frontend/Wzorce i dobre praktyki/Skuteczna komunikacja z API.md",
-        "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan lokalny i współdzielony.md",
-        "Opanuj Frontend/Wzorce i dobre praktyki/Zarządzanie stanem - Stan globalny.md",
-        "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
-        "Assets/Pasted image 20240430113420.png",
-        "Assets/Pasted image 20240316220606.png",
-        "Assets/Pasted image 20240316220543.png",
-        "Opanuj Frontend/Wzorce i dobre praktyki/Czysty kod na frontendzie.md",
-        "VsCode/Skróty klawiszowe.md",
-        "Assets/Pasted image 20240313124324.png",
-        "Assets/Pasted image 20240313130416.png",
-        "Assets/Pasted image 20240313130404.png",
-        "Assets/Pasted image 20240313130345.png",
-        "Assets/Pasted image 20240313124350.png",
-        "Assets/Pasted image 20240313124337.png",
-        "Assets/Pasted image 20240313124250.png",
-        "VsCode",
-        "Git/łączenie commitów.md",
-        "Git/git log.md",
-        "Git/nadpisanie commita.md",
-        "Git/git merge.md",
-        "Git",
-        "Stripe/Stripe CLI.md",
-        "Stripe",
-        "Next Masters/Architektura App Router/2.4 Poisoning i serializacja.md",
-        "Next Masters/Architektura App Router/2.1 App Router.md",
-        "Next Masters/Środowisko Next.js/1.3 Wtyczki VSCode.md",
-        "Next Masters/Środowisko Next.js/1.2 Konfiguracja środowiska pracy.md",
-        "Opanuj Frontend/Wzorce i dobre praktyki",
-        "Opanuj Frontend",
-        "Next Masters/Środowisko Next.js",
-        "Next Masters/Architektura App Router/2.3 React Server Components.md",
-        "Next Masters/Architektura App Router/2.2 Grupy stron.md",
-        "Excalidraw",
-        "Next Masters",
-        "Bez nazwy.canvas",
-        "Bez nazwy 1.canvas"
+  "main": {
+    "id": "9b708d78d6a303ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "a14712f3da61f2fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44c6a9de454305a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "55504c1a83a423ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
     ],
-    "left": {
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d472df35d152c24",
+    "type": "split",
+    "children": [
+      {
+        "id": "5381d7ad77abb8bc",
+        "type": "tabs",
         "children": [
-            {
-                "children": [
-                    {
-                        "id": "70bb9122e7004fd0",
-                        "state": {
-                            "state": {
-                                "sortOrder": "alphabetical"
-                            },
-                            "type": "file-explorer"
-                        },
-                        "type": "leaf"
-                    }
-                ],
-                "id": "5381d7ad77abb8bc",
-                "type": "tabs"
-            },
-            {
-                "children": [
-                    {
-                        "id": "06d8a372330a2d6f",
-                        "state": {
-                            "state": {
-                                "collapseAll": false,
-                                "explainSearch": false,
-                                "extraContext": false,
-                                "matchingCase": false,
-                                "query": "tag:#WebSockets",
-                                "sortOrder": "alphabetical"
-                            },
-                            "type": "search"
-                        },
-                        "type": "leaf"
-                    },
-                    {
-                        "id": "b79d17b6b19307b9",
-                        "state": {
-                            "state": {},
-                            "type": "bookmarks"
-                        },
-                        "type": "leaf"
-                    }
-                ],
-                "id": "e1f0dc94796554f8",
-                "type": "tabs"
+          {
+            "id": "70bb9122e7004fd0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
-        ],
-        "direction": "horizontal",
-        "id": "7d472df35d152c24",
-        "type": "split",
-        "width": 300
-    },
-    "left-ribbon": {
-        "hiddenItems": {
-            "canvas:Stwórz nowe płótno": false,
-            "command-palette:Otwórz paletę poleceń": false,
-            "daily-notes:Otwórz dzisiejszą notatkę": false,
-            "graph:Otwórz graf": false,
-            "obsidian-excalidraw-plugin:Create new drawing": false,
-            "switcher:Otwórz okno szybkiej zmiany pliku": false,
-            "templates:Wstaw szablon": false
-        }
-    },
-    "main": {
+          }
+        ]
+      },
+      {
+        "id": "e1f0dc94796554f8",
+        "type": "tabs",
         "children": [
-            {
-                "children": [
-                    {
-                        "id": "1cfa0e8b08ba1a18",
-                        "state": {
-                            "state": {
-                                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
-                                "mode": "source",
-                                "source": false
-                            },
-                            "type": "markdown"
-                        },
-                        "type": "leaf"
-                    },
-                    {
-                        "id": "44c6a9de454305a1",
-                        "state": {
-                            "state": {
-                                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
-                                "mode": "source",
-                                "source": false
-                            },
-                            "type": "markdown"
-                        },
-                        "type": "leaf"
-                    }
-                ],
-                "id": "a14712f3da61f2fb",
-                "stacked": true,
-                "type": "tabs"
+          {
+            "id": "06d8a372330a2d6f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#WebSockets",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
             }
-        ],
-        "direction": "vertical",
-        "id": "9b708d78d6a303ce",
-        "type": "split"
-    },
-    "right": {
+          },
+          {
+            "id": "b79d17b6b19307b9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "050beb7044d420d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5565843a509ce58",
+        "type": "tabs",
         "children": [
-            {
-                "children": [
-                    {
-                        "id": "f8955485501bd045",
-                        "state": {
-                            "state": {
-                                "backlinkCollapsed": false,
-                                "collapseAll": false,
-                                "extraContext": false,
-                                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
-                                "searchQuery": "",
-                                "showSearch": false,
-                                "sortOrder": "alphabetical",
-                                "unlinkedCollapsed": true
-                            },
-                            "type": "backlink"
-                        },
-                        "type": "leaf"
-                    },
-                    {
-                        "id": "5a217c7d724ede70",
-                        "state": {
-                            "state": {
-                                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
-                                "linksCollapsed": false,
-                                "unlinkedCollapsed": true
-                            },
-                            "type": "outgoing-link"
-                        },
-                        "type": "leaf"
-                    },
-                    {
-                        "id": "83e8c51101be4774",
-                        "state": {
-                            "state": {
-                                "sortOrder": "frequency",
-                                "useHierarchy": true
-                            },
-                            "type": "tag"
-                        },
-                        "type": "leaf"
-                    },
-                    {
-                        "id": "f2094593998d8c82",
-                        "state": {
-                            "state": {
-                                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md"
-                            },
-                            "type": "outline"
-                        },
-                        "type": "leaf"
-                    }
-                ],
-                "currentTab": 3,
-                "id": "c5565843a509ce58",
-                "type": "tabs"
+          {
+            "id": "f8955485501bd045",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
             }
+          },
+          {
+            "id": "5a217c7d724ede70",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "83e8c51101be4774",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f2094593998d8c82",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md"
+              }
+            }
+          }
         ],
-        "direction": "horizontal",
-        "id": "050beb7044d420d9",
-        "type": "split",
-        "width": 300
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:Stwórz nowe płótno": false,
+      "command-palette:Otwórz paletę poleceń": false,
+      "daily-notes:Otwórz dzisiejszą notatkę": false,
+      "graph:Otwórz graf": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "switcher:Otwórz okno szybkiej zmiany pliku": false,
+      "templates:Wstaw szablon": false
     }
+  },
+  "active": "44c6a9de454305a1",
+  "lastOpenFiles": [
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Techniki wydajnego frontendu.md",
+    "Pasted image 20240510130609.png",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
+    "Pasted image 20240510130552.png",
+    "Pasted image 20240510130541.png",
+    "Pasted image 20240510130457.png",
+    "Pasted image 20240510130455.png",
+    "opanuj-frontend-praktyka/_resources/img/header.png",
+    "opanuj-frontend-praktyka/_resources/img",
+    "opanuj-frontend-praktyka/_resources",
+    "opanuj-frontend-praktyka/examples/scripts/data/weather.json",
+    "opanuj-frontend-praktyka/examples/scripts/data/authors.json",
+    "opanuj-frontend-praktyka/examples/scripts/data/users.json",
+    "opanuj-frontend-praktyka/examples/scripts/data/items.json",
+    "opanuj-frontend-praktyka/examples/scripts/data/articles.json",
+    "opanuj-frontend-praktyka/examples/scripts/middlewares/timeout-middleware.mjs",
+    "opanuj-frontend-praktyka/examples/scripts/data/comments.json",
+    "opanuj-frontend-praktyka/examples/scripts/data/bootstrap.json",
+    "opanuj-frontend-praktyka/practice/vue-app/src/assets/vue.svg",
+    "opanuj-frontend-praktyka/practice/react-app/src/assets/react.svg",
+    "opanuj-frontend-praktyka/practice/vue-app/public/vite.svg",
+    "opanuj-frontend-praktyka/practice/react-app/public/vite.svg",
+    "opanuj-frontend-praktyka/practice/vue-app/README.md",
+    "opanuj-frontend-praktyka/practice/react-app/README.md",
+    "opanuj-frontend-praktyka/practice/angular-app/README.md",
+    "opanuj-frontend-praktyka/examples/module4/lesson2/design-tokens/README.md",
+    "opanuj-frontend-praktyka/examples/module2/lesson5/weather-ui/scenario.md",
+    "opanuj-frontend-praktyka/examples/module2/lesson5/discount-simulator/REQUIREMENTS.md",
+    "opanuj-frontend-praktyka/examples/module1/lesson2/_solutions/signals-angular/README.md",
+    "opanuj-frontend-praktyka/examples/module1/lesson2/signals-angular-start/README.md",
+    "opanuj-frontend-praktyka/examples/module1/lesson2/signals-angular-finish/README.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Zarządzanie stanem - Stan globalny.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Zarządzanie stanem - Stan lokalny i współdzielony.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
+    "Bez nazwy 1.md",
+    "Bez nazwy 2.md",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.9 Płatności przez Stripe.md",
+    "Next Masters/Architektura App Router/2.9 SEO i MDX.md",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.11 Parallel intercepting routes.md",
+    "Bez nazwy.md",
+    "4.12 Kompletny kod mutacji z tego działu.md",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.10 Zaawansowane pliki w routingu Next.js.md",
+    "VsCode/Skróty klawiszowe.md",
+    "Bez nazwy.canvas",
+    "Bez nazwy 1.canvas"
+  ]
 }
