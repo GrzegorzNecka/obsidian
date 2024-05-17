@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a14712f3da61f2fb",
+        "id": "2376775c38cb102d",
         "type": "tabs",
         "children": [
           {
-            "id": "44c6a9de454305a1",
+            "id": "e4d0c603c60270f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55504c1a83a423ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/AI Edition - Pair programming z AI.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/AI Edition - Pair programming z AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/AI Edition - Pair programming z AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md"
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/AI Edition - Pair programming z AI.md"
               }
             }
           }
@@ -166,18 +154,25 @@
       "templates:Wstaw szablon": false
     }
   },
-  "active": "44c6a9de454305a1",
+  "active": "e4d0c603c60270f0",
   "lastOpenFiles": [
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
-    "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+    "Pasted image 20240517081126.png",
+    "Pasted image 20240517081116.png",
+    "Pasted image 20240517081051.png",
+    "Pasted image 20240517081042.png",
+    "Pasted image 20240517081024.png",
+    "Pasted image 20240517081012.png",
+    "Pasted image 20240517080913.png",
+    "Pasted image 20240517080859.png",
+    "Pasted image 20240517080821.png",
+    "Pasted image 20240517080807.png",
+    "Pasted image 20240517080755.png",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/AI Edition - Pair programming z AI.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Techniki wydajnego frontendu.md",
-    "Pasted image 20240510130609.png",
     "Next Masters/Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
-    "Pasted image 20240510130552.png",
-    "Pasted image 20240510130541.png",
-    "Pasted image 20240510130457.png",
-    "Pasted image 20240510130455.png",
-    "opanuj-frontend-praktyka/_resources/img/header.png",
+    "Next Masters/Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
     "opanuj-frontend-praktyka/_resources/img",
     "opanuj-frontend-praktyka/_resources",
     "opanuj-frontend-praktyka/examples/scripts/data/weather.json",
@@ -188,10 +183,6 @@
     "opanuj-frontend-praktyka/examples/scripts/middlewares/timeout-middleware.mjs",
     "opanuj-frontend-praktyka/examples/scripts/data/comments.json",
     "opanuj-frontend-praktyka/examples/scripts/data/bootstrap.json",
-    "opanuj-frontend-praktyka/practice/vue-app/src/assets/vue.svg",
-    "opanuj-frontend-praktyka/practice/react-app/src/assets/react.svg",
-    "opanuj-frontend-praktyka/practice/vue-app/public/vite.svg",
-    "opanuj-frontend-praktyka/practice/react-app/public/vite.svg",
     "opanuj-frontend-praktyka/practice/vue-app/README.md",
     "opanuj-frontend-praktyka/practice/react-app/README.md",
     "opanuj-frontend-praktyka/practice/angular-app/README.md",
@@ -203,7 +194,6 @@
     "opanuj-frontend-praktyka/examples/module1/lesson2/signals-angular-finish/README.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Zarządzanie stanem - Stan globalny.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Zarządzanie stanem - Stan lokalny i współdzielony.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
     "Next Masters/Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
     "Bez nazwy 1.md",
     "Bez nazwy 2.md",
@@ -212,8 +202,6 @@
     "Next Masters/Zaawansowane aspekty Next.js 14/4.11 Parallel intercepting routes.md",
     "Bez nazwy.md",
     "4.12 Kompletny kod mutacji z tego działu.md",
-    "Next Masters/Zaawansowane aspekty Next.js 14/4.10 Zaawansowane pliki w routingu Next.js.md",
-    "VsCode/Skróty klawiszowe.md",
     "Bez nazwy.canvas",
     "Bez nazwy 1.canvas"
   ]
