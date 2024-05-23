@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md",
+                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md",
+                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md",
+                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md"
+                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md"
               }
             }
           }
@@ -156,9 +156,13 @@
   },
   "active": "e4d0c603c60270f0",
   "lastOpenFiles": [
+    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.6 Funkcje dynamiczne.md",
+    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
+    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.5 Navbar i koszyk.md",
+    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.4 Optimistic updates.md",
+    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md",
     "Next Masters/4. Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
     "Next Masters/4. Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Zarządzanie stanem - Stan lokalny i współdzielony.md",
     "Assets/Pasted image 20240521102808.png",
@@ -185,10 +189,6 @@
     "Git/łączenie commitów.md",
     "VsCode/skróty klawiszowe.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Zarządzanie stanem - Stan globalny.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Techniki wydajnego frontendu.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/AI Edition - Pair programming z AI.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.9 Płatności przez Stripe.md",
     "Assets/Pasted image 20240510130455.png",
     "Assets/Pasted image 20240521084224.png",
     "Wzorce Projektowe",
