@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2376775c38cb102d",
+        "id": "e7fbac17b1083d2b",
         "type": "tabs",
         "children": [
           {
-            "id": "e4d0c603c60270f0",
+            "id": "55f12269cee98787",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
-                "mode": "source",
-                "source": false
+                "file": "Assets/Pasted image 20240703103016.png"
               }
             }
           }
@@ -92,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
+                "file": "Assets/Pasted image 20240703103016.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
+                "file": "Assets/Pasted image 20240703103016.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md"
+                "file": "Assets/Pasted image 20240703103016.png"
               }
             }
           }
@@ -154,54 +152,54 @@
       "templates:Wstaw szablon": false
     }
   },
-  "active": "e4d0c603c60270f0",
+  "active": "70bb9122e7004fd0",
   "lastOpenFiles": [
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.6 Funkcje dynamiczne.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.7 Cache.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.5 Navbar i koszyk.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.4 Optimistic updates.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.3 Server Actions 3.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.1 Server Actions 1.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.2 Server Actions 2.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Zarządzanie stanem - Stan lokalny i współdzielony.md",
-    "Assets/Pasted image 20240521102808.png",
-    "Algorytmy/Podstawowe struktury danych (typeofweb).md",
-    "Assets/Pasted image 20240521104931.png",
-    "Wzorce Projektowe/Decorator (frontstack).md",
-    "Wzorce Projektowe/Decorator (devszczepaniak).md",
-    "test diagramu.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.11 Parallel intercepting routes.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.12 Kompletny kod mutacji z tego działu.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.13 Zadania.md",
-    "Next Masters/4. Zaawansowane aspekty Next.js 14/4.10 Zaawansowane pliki w routingu Next.js.md",
-    "Next Masters/2. Architektura App Router/2.8 Statyczne Generowanie.md",
-    "Next Masters/2. Architektura App Router/2.7 Async komponenty.md",
-    "Next Masters/2. Architektura App Router/2.3 React Server Components.md",
-    "Next Masters/2. Architektura App Router/2.2 Grupy stron.md",
-    "Next Masters/2. Architektura App Router/2.1 App Router.md",
+    "Next Masters/2. Architektura App Router/2.10 Zadania.md",
+    "Next Masters/1. Środowisko Next.js/1.9 zadania.md",
+    "Next Masters/1. Środowisko Next.js/1.7 Devtools i Vercel.md",
+    "Assets/Pasted image 20240703122236.png",
+    "Next Masters/3. Typesafe integracja z GraphQl/Zadania.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.10  Optymalizacje obrazki i fonty.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.9 Fragment masking w GraphQL.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.8 Fragmenty GraphQL.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.7 Sparametryzowane zapytania GraphQL.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.6 Generowanie typów z GraphQL (codegen).md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.5 Dlaczego nie potrzebujemy klienta GraphQL.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.4 GraphQL ciąg dalszy.md",
+    "Assets/Pasted image 20240703120643.png",
+    "Assets/Pasted image 20240703120631.png",
+    "Assets/Pasted image 20240703120620.png",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.3 Intro do GraphQL.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.2 Desig, ikony.md",
+    "Next Masters/3. Typesafe integracja z GraphQl/3.1 Poprawki do konfiguracji ESLint.md",
+    "Next Masters/6. Zaawansowane formularze i i18n/6.1 Formularze walidacja ZOD.md",
+    "Next Masters/3. Typesafe integracja z GraphQl",
+    "Next Masters/5. Auth i Self-hosting/5.13 Zadania.md",
+    "Next Masters/6. Zaawansowane formularze i i18n",
+    "Next Masters/Bez nazwy.md",
+    "Next Masters/5. Auth i Self-hosting/5.12 Fly.io.md",
+    "Assets/Pasted image 20240703115849.png",
+    "Next Masters/5. Auth i Self-hosting/5.11 Railway App.md",
+    "Assets/Pasted image 20240703115812.png",
+    "Assets/Pasted image 20240703115758.png",
+    "Assets/Pasted image 20240703115750.png",
+    "Next Masters/5. Auth i Self-hosting/5.10 Cloudflare.md",
+    "Next Masters/5. Auth i Self-hosting/5.9 DigitalOcean.md",
+    "Assets/Pasted image 20240703115616.png",
+    "Assets/Pasted image 20240703115601.png",
+    "Next Masters/5. Auth i Self-hosting/5.9 AWS.md",
+    "Next Masters/5. Auth i Self-hosting/5.7 Konfiguracja Dockera.md",
+    "Next Masters/5. Auth i Self-hosting/5.6 Self-Hosting Next.js.md",
+    "Next Masters/5. Auth i Self-hosting/5.5 Strona Zamówień.md",
+    "Next Masters/5. Auth i Self-hosting/5.4 Sesja użytkownika.md",
+    "Next Masters/5. Auth i Self-hosting",
     "JavaScript DOM",
     "JavaScript",
-    "Assets/Pasted image 20240521084851.png",
-    "Assets/Pasted image 20240521084857.png",
     "Algorytmy",
-    "Git/nadpisanie commita.md",
-    "Git/łączenie commitów.md",
-    "VsCode/skróty klawiszowe.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
-    "Assets/Pasted image 20240510130455.png",
-    "Assets/Pasted image 20240521084224.png",
     "Wzorce Projektowe",
-    "Assets/Pasted image 20240517081126.png",
-    "Assets/Pasted image 20240517081116.png",
-    "Assets/Pasted image 20240517081051.png",
-    "Assets/Pasted image 20240517081042.png",
     "opanuj-frontend-praktyka/_resources/img",
     "opanuj-frontend-praktyka/_resources",
     "opanuj-frontend-praktyka/examples/scripts/data/weather.json",
-    "opanuj-frontend-praktyka/examples/scripts/data/authors.json",
-    "opanuj-frontend-praktyka/examples/scripts/data/users.json",
-    "opanuj-frontend-praktyka/examples/scripts/data/items.json",
     "Bez nazwy.canvas",
     "Bez nazwy 1.canvas"
   ]
