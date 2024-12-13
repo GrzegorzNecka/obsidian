@@ -13,8 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Assets/Pasted image 20240703103016.png"
-              }
+                "file": "decorator-diagram.png"
+              },
+              "icon": "lucide-image",
+              "title": "decorator-diagram"
             }
           }
         ],
@@ -38,7 +40,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Przeglądarka plików"
             }
           }
         ]
@@ -53,13 +57,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#WebSockets",
+                "query": "tag:#DRY",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Szukaj"
             }
           },
           {
@@ -67,7 +73,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Zakładki"
             }
           }
         ]
@@ -90,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assets/Pasted image 20240703103016.png",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +106,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Łącza zwrotne do 1.1 Czysty kod na frontendzie"
             }
           },
           {
@@ -107,10 +117,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assets/Pasted image 20240703103016.png",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Czysty kod na frontendzie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Linki wychodzące z 1.1 Czysty kod na frontendzie"
             }
           },
           {
@@ -121,7 +133,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tagi"
             }
           },
           {
@@ -130,16 +144,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assets/Pasted image 20240703103016.png"
-              }
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md"
+              },
+              "icon": "lucide-list",
+              "title": "Zarys 1.3 Wzorce projektowe w warstwie clienta"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 217.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,6 +171,27 @@
   },
   "active": "70bb9122e7004fd0",
   "lastOpenFiles": [
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+    "decorator-diagram.png",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
+    "obserwator-diagram.png",
+    "test diagramu.md",
+    "Bez nazwy.canvas",
+    "13-22-2024.md",
+    "Bez nazwy 1.canvas",
+    "Assets/Pasted image 20241213084613.png",
+    "Assets/Pasted image 20241213090210.png",
+    "Assets/Pasted image 20241213085545.png",
+    "Excalidraw/Drawing 2024-12-13 08.22.41.excalidraw.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
+    "Assets/Pasted image 20241211153409.png",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/_ Zarządzanie stanem - Stan lokalny i współdzielony.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
+    "Git/nadpisanie commita.md",
+    "Git/git log.md",
+    "Git/git merge.md",
+    "Git/łączenie commitów.md",
+    "Assets/Pasted image 20240703103016.png",
     "Next Masters/2. Architektura App Router/2.10 Zadania.md",
     "Next Masters/1. Środowisko Next.js/1.9 zadania.md",
     "Next Masters/1. Środowisko Next.js/1.7 Devtools i Vercel.md",
@@ -168,30 +206,10 @@
     "Next Masters/3. Typesafe integracja z GraphQl/3.4 GraphQL ciąg dalszy.md",
     "Assets/Pasted image 20240703120643.png",
     "Assets/Pasted image 20240703120631.png",
-    "Assets/Pasted image 20240703120620.png",
     "Next Masters/3. Typesafe integracja z GraphQl/3.3 Intro do GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.2 Desig, ikony.md",
-    "Next Masters/3. Typesafe integracja z GraphQl/3.1 Poprawki do konfiguracji ESLint.md",
-    "Next Masters/6. Zaawansowane formularze i i18n/6.1 Formularze walidacja ZOD.md",
     "Next Masters/3. Typesafe integracja z GraphQl",
-    "Next Masters/5. Auth i Self-hosting/5.13 Zadania.md",
     "Next Masters/6. Zaawansowane formularze i i18n",
-    "Next Masters/Bez nazwy.md",
-    "Next Masters/5. Auth i Self-hosting/5.12 Fly.io.md",
-    "Assets/Pasted image 20240703115849.png",
-    "Next Masters/5. Auth i Self-hosting/5.11 Railway App.md",
-    "Assets/Pasted image 20240703115812.png",
-    "Assets/Pasted image 20240703115758.png",
-    "Assets/Pasted image 20240703115750.png",
-    "Next Masters/5. Auth i Self-hosting/5.10 Cloudflare.md",
-    "Next Masters/5. Auth i Self-hosting/5.9 DigitalOcean.md",
-    "Assets/Pasted image 20240703115616.png",
-    "Assets/Pasted image 20240703115601.png",
-    "Next Masters/5. Auth i Self-hosting/5.9 AWS.md",
-    "Next Masters/5. Auth i Self-hosting/5.7 Konfiguracja Dockera.md",
-    "Next Masters/5. Auth i Self-hosting/5.6 Self-Hosting Next.js.md",
-    "Next Masters/5. Auth i Self-hosting/5.5 Strona Zamówień.md",
-    "Next Masters/5. Auth i Self-hosting/5.4 Sesja użytkownika.md",
     "Next Masters/5. Auth i Self-hosting",
     "JavaScript DOM",
     "JavaScript",
@@ -199,8 +217,6 @@
     "Wzorce Projektowe",
     "opanuj-frontend-praktyka/_resources/img",
     "opanuj-frontend-praktyka/_resources",
-    "opanuj-frontend-praktyka/examples/scripts/data/weather.json",
-    "Bez nazwy.canvas",
-    "Bez nazwy 1.canvas"
+    "opanuj-frontend-praktyka/examples/scripts/data/weather.json"
   ]
 }
