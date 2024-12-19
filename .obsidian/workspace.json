@@ -11,15 +11,38 @@
             "id": "55f12269cee98787",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "decorator-diagram.png"
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "decorator-diagram"
+              "icon": "lucide-file",
+              "title": "1.3 Wzorce projektowe w warstwie clienta"
+            }
+          },
+          {
+            "id": "b90add06d0a125a9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nowa karta"
+            }
+          },
+          {
+            "id": "1ad8badfe713ac62",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nowa karta"
             }
           }
         ],
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -169,9 +192,11 @@
       "templates:Wstaw szablon": false
     }
   },
-  "active": "70bb9122e7004fd0",
+  "active": "1ad8badfe713ac62",
   "lastOpenFiles": [
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
+    "proxy - diagram.png",
     "decorator-diagram.png",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
     "obserwator-diagram.png",
@@ -186,7 +211,6 @@
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
     "Assets/Pasted image 20241211153409.png",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/_ Zarządzanie stanem - Stan lokalny i współdzielony.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
     "Git/nadpisanie commita.md",
     "Git/git log.md",
     "Git/git merge.md",
@@ -205,7 +229,6 @@
     "Next Masters/3. Typesafe integracja z GraphQl/3.5 Dlaczego nie potrzebujemy klienta GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.4 GraphQL ciąg dalszy.md",
     "Assets/Pasted image 20240703120643.png",
-    "Assets/Pasted image 20240703120631.png",
     "Next Masters/3. Typesafe integracja z GraphQl/3.3 Intro do GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.2 Desig, ikony.md",
     "Next Masters/3. Typesafe integracja z GraphQl",
