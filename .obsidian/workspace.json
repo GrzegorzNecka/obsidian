@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "55f12269cee98787",
+            "id": "346159e623a277d5",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "decorator-diagram.png"
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "decorator-diagram"
+              "icon": "lucide-file",
+              "title": "1.3 Wzorce projektowe w warstwie clienta"
             }
           }
         ],
@@ -169,11 +171,12 @@
       "templates:Wstaw szablon": false
     }
   },
-  "active": "70bb9122e7004fd0",
+  "active": "346159e623a277d5",
   "lastOpenFiles": [
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
-    "decorator-diagram.png",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
+    "decorator-diagram.png",
     "obserwator-diagram.png",
     "test diagramu.md",
     "Bez nazwy.canvas",
@@ -186,7 +189,6 @@
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
     "Assets/Pasted image 20241211153409.png",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/_ Zarządzanie stanem - Stan lokalny i współdzielony.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
     "Git/nadpisanie commita.md",
     "Git/git log.md",
     "Git/git merge.md",
