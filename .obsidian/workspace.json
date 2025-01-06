@@ -13,36 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.3 Wzorce projektowe w warstwie clienta"
-            }
-          },
-          {
-            "id": "b90add06d0a125a9",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nowa karta"
-            }
-          },
-          {
-            "id": "1ad8badfe713ac62",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nowa karta"
+              "title": "1.2 Dobre-praktyki i refaktoryzacja kodu"
             }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -192,13 +171,21 @@
       "templates:Wstaw szablon": false
     }
   },
-  "active": "1ad8badfe713ac62",
+  "active": "55f12269cee98787",
   "lastOpenFiles": [
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Zarządzanie stanem lokalnym i współdzielonym.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Techniki wydajnego frontendu.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Czym jest zarządzanie stanem na frontndzie.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/_ Zarządzanie stanem - Stan lokalny i współdzielony.md",
+    "image 2.webp",
+    "Pasted image 20250105163711.png",
+    "image 1.webp",
+    "image.webp",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Skuteczna komunikacja z API.md",
+    "21-08-2024.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
     "proxy - diagram.png",
     "decorator-diagram.png",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
     "obserwator-diagram.png",
     "test diagramu.md",
     "Bez nazwy.canvas",
@@ -209,17 +196,13 @@
     "Assets/Pasted image 20241213085545.png",
     "Excalidraw/Drawing 2024-12-13 08.22.41.excalidraw.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
-    "Assets/Pasted image 20241211153409.png",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/_ Zarządzanie stanem - Stan lokalny i współdzielony.md",
     "Git/nadpisanie commita.md",
     "Git/git log.md",
     "Git/git merge.md",
     "Git/łączenie commitów.md",
-    "Assets/Pasted image 20240703103016.png",
     "Next Masters/2. Architektura App Router/2.10 Zadania.md",
     "Next Masters/1. Środowisko Next.js/1.9 zadania.md",
     "Next Masters/1. Środowisko Next.js/1.7 Devtools i Vercel.md",
-    "Assets/Pasted image 20240703122236.png",
     "Next Masters/3. Typesafe integracja z GraphQl/Zadania.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.10  Optymalizacje obrazki i fonty.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.9 Fragment masking w GraphQL.md",
@@ -228,9 +211,6 @@
     "Next Masters/3. Typesafe integracja z GraphQl/3.6 Generowanie typów z GraphQL (codegen).md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.5 Dlaczego nie potrzebujemy klienta GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.4 GraphQL ciąg dalszy.md",
-    "Assets/Pasted image 20240703120643.png",
-    "Next Masters/3. Typesafe integracja z GraphQl/3.3 Intro do GraphQL.md",
-    "Next Masters/3. Typesafe integracja z GraphQl/3.2 Desig, ikony.md",
     "Next Masters/3. Typesafe integracja z GraphQl",
     "Next Masters/6. Zaawansowane formularze i i18n",
     "Next Masters/5. Auth i Self-hosting",
