@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+                "file": "Opanuj Frontend/1. Wzorce i dobre praktyki/1.6 Architektura Flux i lekcje z mody na Reduxa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.3 Wzorce projektowe w warstwie clienta"
+              "title": "1.6 Architektura Flux i lekcje z mody na Reduxa"
             }
           }
         ],
@@ -173,18 +173,21 @@
   },
   "active": "55f12269cee98787",
   "lastOpenFiles": [
+    "image 4.webp",
+    "image 3.webp",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.6 Architektura Flux i lekcje z mody na Reduxa.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
+    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Czym jest zarządzanie stanem na frontndzie.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Zarządzanie stanem lokalnym i współdzielonym.md",
     "Screenshot 2024-11-07 at 16.11.55.png",
     "Screenshot 2024-11-07 at 16.11.20.png",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Czym jest zarządzanie stanem na frontndzie.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Techniki wydajnego frontendu.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/_ Zarządzanie stanem - Stan lokalny i współdzielony.md",
     "image 2.webp",
     "Pasted image 20250105163711.png",
     "image 1.webp",
     "image.webp",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
     "21-08-2024.md",
     "proxy - diagram.png",
     "decorator-diagram.png",
@@ -193,7 +196,6 @@
     "Bez nazwy.canvas",
     "13-22-2024.md",
     "Bez nazwy 1.canvas",
-    "Assets/Pasted image 20241213084613.png",
     "Excalidraw/Drawing 2024-12-13 08.22.41.excalidraw.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
     "Git/nadpisanie commita.md",
@@ -209,7 +211,6 @@
     "Next Masters/3. Typesafe integracja z GraphQl/3.8 Fragmenty GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.7 Sparametryzowane zapytania GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl/3.6 Generowanie typów z GraphQL (codegen).md",
-    "Next Masters/3. Typesafe integracja z GraphQl/3.5 Dlaczego nie potrzebujemy klienta GraphQL.md",
     "Next Masters/3. Typesafe integracja z GraphQl",
     "Next Masters/6. Zaawansowane formularze i i18n",
     "Next Masters/5. Auth i Self-hosting",
