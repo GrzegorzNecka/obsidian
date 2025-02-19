@@ -1,6 +1,5 @@
 
-
-
+**MySQL**
 
 Wykład ten przedstawia podstawowe pojęcia związane z projektowaniem relacyjnych baz danych oraz językiem SQL - Structure Query Language.
 
@@ -56,13 +55,13 @@ Do tworzenia, usuwania, modyfikowania baz danych, tabel, widoków w MySQL stosuj
 Utworzymy bazę danych test - wpisując polecenie:  
   
 
-```sql
+```mysql
 CREATE DATABASE test;
 ```
 
   
 
-```sql
+```mysql
 USE test;
 ```
 
@@ -72,27 +71,49 @@ Jeżeli nie ma błędu baza danych test została utworzona. Po wykonaniu polecen
 
 Teraz utworzymy tabelę o nazwie samochody wydając następujące polecenie:  
 
-```sql
-CREATE TABLE samochody(id int auto_increment, marka varchar(30), model varchar(30), rocznik int, pojemnosc float, przyspieszenie float, PRIMARY KEY(id));
+```mysql
+CREATE TABLE samochody  
+  (  
+     id             _INT_ auto_increment,  
+     marka          _VARCHAR_(30),  
+     model          _VARCHAR_(30),  
+     rocznik        _INT_,  
+     pojemnosc      _FLOAT_,  
+     przyspieszenie _FLOAT_,  
+     PRIMARY KEY(id)  
+  );
 ```
 
 Za pomocą polecenia:  
 
-```sql
-INSERT INTO samochody VALUES(NULL, "Bugatti", "Veyron", 2018, 7993.0, 2.5);
+```mysql
+INSERT INTO samochody  
+VALUES     (NULL,  
+            "bugatti",  
+            "veyron",  
+            2018,  
+            7993.0,  
+            2.5);
 ```
 
   
 wprowadzimy wiersz do tabeli samochody.  
 
-```sql
-INSERT INTO samochody VALUES(NULL, "Lamborghini", "Aventador", 2018, 6498.0, 2.9);
+```mysql
+INSERT INTO samochody  
+VALUES     (NULL,  
+            "lamborghini",  
+            "aventador",  
+            2018,  
+            6498.0,  
+            2.9);
 ```
 
 Wydając polecenie:  
 
-```sql
-SELECT * FROM samochody;
+```mysql
+SELECT *  
+FROM   samochody;
 ```
 
   
@@ -124,8 +145,31 @@ Widzimy po lewej stronie że baza danych studia została utworzona. Następnie w
 
 Poniżej znajduje się instrukcja wygenerowana przez phpMyAdmin:  
 
-```
-CREATE TABLE `studia`.`student` ( `id_student` INT NOT NULL AUTO_INCREMENT , `imie` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL , `nazwisko` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL , `id_wydzial` INT NOT NULL , `id_kierunek` INT NOT NULL , `nr_albumu` INT NOT NULL , `rok_studiów` INT NOT NULL , `miejscowosc` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL , `wojewodztwo` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL , `rok_urodzenia` INT NOT NULL , `status` ENUM('student','urlop','skreslony','absolwent') CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL , PRIMARY KEY (`id_student`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_polish_ci;
+```sql
+CREATE TABLE `studia`.`student`  
+  (  
+     `id_student`    _INT_ NOT NULL auto_increment,  
+     `imie`          _VARCHAR_(20) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT  
+     NULL,  
+     `nazwisko`      _VARCHAR_(30) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT  
+     NULL,  
+     `id_wydzial`    _INT_ NOT NULL,  
+     `id_kierunek`   _INT_ NOT NULL,  
+     `nr_albumu`     _INT_ NOT NULL,  
+     `rok_studiow`  _INT_ NOT NULL,  
+     `miejscowosc`   _VARCHAR_(30) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT  
+     NULL,  
+     `wojewodztwo`   _VARCHAR_(30) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT  
+     NULL,  
+     `rok_urodzenia` _INT_ NOT NULL,  
+     `status`        _ENUM_('student', 'urlop', 'skreslony', 'absolwent')  
+     CHARACTER SET utf8  
+     COLLATE utf8_polish_ci NOT NULL,  
+     PRIMARY KEY (`id_student`)  
+  )  
+engine = innodb  
+charset=utf8  
+COLLATE utf8_polish_ci;
 ```
 
 [![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/phpMyAdmin3.png "phpMyAdmin")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/phpMyAdmin3.png)  
@@ -141,10 +185,10 @@ Tabela zbudowana jest z wierszy i kolumn. Każda kolumna składa się z nazwy i 
 |Adam|Nowak|15344-346|2|Kielce|świętokrzyskie|1998|
 |Jan|Kowalski|15344-313|1|Warszawa|mazowieckie|1999|
 
-|   |
-|---|
-|Rekord|
-|Pole|
+|        |
+| ------ |
+| Rekord |
+| Pole   |
 
 W kolumnach przechowujemy cechy obiektu np. imię, nazwisko, numer albumu, datę urodzenia, itp.  
 Wiersz - inaczej **rekord** to zestaw cech jednego studenta.  
@@ -215,9 +259,7 @@ Poniżej zestawiono w tabelach najważniejsze typy danych obsługiwanie przez My
 # Zapytanie CREATE
 
   
-
 ### Zapytanie CREATE DATABASE
-
   
 Składnia instrukcji CREATE DATABASE:  
 CREATE DATABASE nazwa_bazy_danych;  
@@ -240,30 +282,36 @@ CREATE TABLE nazwa_tabeli (nazwa_kolumny typ [atrybuty], ...);
 **Przykład 1:** Zapytanie CREATE TABLE wygenerowane przez phpMyAdmin  
   
 
-```
-CREATE TABLE `oferta` (
-`id_oferta` int(11) NOT NULL,
-`id_firma` int(11) NOT NULL,
-`id_wydzial` int(11) NOT NULL,
-`id_kategoria` int(11) NOT NULL,
-`tytul` varchar(255) COLLATE utf8_polish_ci NOT NULL,
-`opis` text COLLATE utf8_polish_ci NOT NULL,
-`slowa` text COLLATE utf8_polish_ci NOT NULL,
-`obszary` text COLLATE utf8_polish_ci NOT NULL,
-`innowacyjnosc` text COLLATE utf8_polish_ci NOT NULL,
-`id_gotowosc` int(11) NOT NULL,
-`id_status` int(11) NOT NULL,
-`materialy` text COLLATE utf8_polish_ci NOT NULL,
-`informacje` text COLLATE utf8_polish_ci NOT NULL,
-`inne` text COLLATE utf8_polish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+```mysql
+CREATE TABLE `oferta`
+             (
+                          `id_oferta`    int(11) NOT NULL,
+                          `id_firma`     int(11) NOT NULL,
+                          `id_wydzial`   int(11) NOT NULL,
+                          `id_kategoria` int(11) NOT NULL,
+                          `tytul`        varchar(255) COLLATE utf8_polish_ci NOT NULL,
+                          `opis` text COLLATE utf8_polish_ci NOT NULL,
+                          `slowa` text COLLATE utf8_polish_ci NOT NULL,
+                          `obszary` text COLLATE utf8_polish_ci NOT NULL,
+                          `innowacyjnosc` text COLLATE utf8_polish_ci NOT NULL,
+                          `id_gotowosc` int(11) NOT NULL,
+                          `id_status`   int(11) NOT NULL,
+                          `materialy` text COLLATE utf8_polish_ci NOT NULL,
+                          `informacje` text COLLATE utf8_polish_ci NOT NULL,
+                          `inne` text COLLATE utf8_polish_ci NOT NULL
 ```
 
   
 **Przykład 2:**  
 
-```
-CREATE TABLE dvd (id_dvd int NOT NULL PRIMARY KEY AUTO_INCREMENT, tytul varchar(100), gatunek enum("Horror","Thriller","Komedia","Sensacyjny","Obyczajowy"), rok int);
+```mysql
+CREATE TABLE dvd  
+  (  
+     id_dvd  _INT_ NOT NULL PRIMARY KEY auto_increment,  
+     tytul   _VARCHAR_(100),  
+     gatunek _ENUM_("Horror", "Thriller", "Komedia", "Sensacyjny", "Obyczajowy"),  
+     rok     _INT_  
+  );
 ```
 
 Ogólna zasada tworzenia tabel jest taka, że po CREATE TABLE podajemy nazwę tabeli i następnie w nawiasach (,) wprowadzamy nazwę kolumny, jej typ danych ewentualnie argumenty takie jak np: NOT NULL, PRIMARY KEY, DEFAULT wartość, AUTO_INCREMENT. Kolumny oddzielamy przecinkiem. Po nawiasach możemy określić tzw. storage engine - silnik przechowywania informacji. Najważniejsze z nich to: InnoDB, MyISAM, MEMORY, CSV. Pełna składnia zapytania select znajduje się w dokumentacji systemu.
@@ -276,14 +324,18 @@ CREATE TABLE nazwa_tabeli SELECT lista_kolumn FROM istniejąca_tabela WHERE waru
   
 **Przykład 3:**  
 
-```
-CREATE TABLE modele SELECT marka, model FROM samochody;
+```sql
+CREATE TABLE modele  
+  SELECT marka,  
+         model  
+  FROM   samochody;
 ```
 
 **Przykład 4:**  
 
-```
-CRETAE TABLE tytul_ksiazki SELECT tytul FROM ksiazki;
+```sql
+CRETAE TABLE tytul_ksiazkiSELECT tytul  
+FROM   ksiazki;
 ```
 
   
@@ -296,14 +348,24 @@ CREATE VIEW nazwa_widoku (kolumny) AS SELECT kolumny FROM tabela;
   
 **Przykład 1:**  
 
-```
-CREATE VIEW miasta (miejscowosc, wojewodzwto) AS SELECT miejscowosc, wojewodztwo FROM student;
+```sql
+CREATE VIEW miasta (miejscowosc, wojewodzwto)  
+AS  
+  SELECT miejscowosc,  
+         wojewodztwo  
+  FROM   student;
 ```
 
 **Przykład 2:**  
 
-```
-CREATE VIEW data_wypozyczenia (id_wypozyczono, data_wyp, data_zwrotu) AS SELECT id_wypozyczono, data_wyp, data_zwrotu FROM wypozyczono;
+
+```sql
+CREATE VIEW data_wypozyczenia (id_wypozyczono, data_wyp, data_zwrotu)  
+AS  
+  SELECT id_wypozyczono,  
+         data_wyp,  
+         data_zwrotu  
+  FROM   wypozyczono;
 ```
 
 Dzięki wykorzystaniu widoków mamy dostęp tylko do wybranej części tabeli.
@@ -321,7 +383,7 @@ Aby rozpocząć pracę z językiem SQL - Structured Query Language w pierwszej k
 Można to również wykonać za pomocą konsoli wydając polecenie source ścieżka_do_pliku_sql  
 Jeżeli przekopiujemy plik studia.sql do katalogu bin, to nie musimy podawać całej ścieżki tylko nazwę pliku.  
 
-```
+```sql
 source studia.sql;
 ```
 
@@ -332,11 +394,11 @@ source studia.sql;
   
 Przechodzimy do konsoli MySQL i wpisujemy następujące polecenia:  
 
-```
+```mysql
 USE studia;
 ```
 
-```
+```mysql
 SHOW tables;
 ```
 
@@ -350,7 +412,6 @@ GROUP BY kolumna/y
 HAVING  
 ORDER BY kolumna/y  
 LIMIT  
-
 **SELECT** - oznacza wybierz poszczególne kolumny  
 **FROM** - z tabeli  
 **WHERE** - gdzie warunki  
@@ -361,8 +422,10 @@ Operator **LIKE** służy do wyszukiwania odpowiednich wzorców w rekordach ta
   
 **Przykład** wykorzystania operatora LIKE:  
 
-```
-SELECT * FROM ksiazki WHERE tytul LIKE "%C#%";
+```mysql
+SELECT *  
+FROM   ksiazki  
+WHERE  tytul LIKE "%c#%";
 ```
 
   
@@ -373,16 +436,19 @@ Efektem wykonania się tego zapytania będą wszystkie rekordy tabeli książki,
   
 **Przykład: Wypisz wszystkie rekordy, gdzie autor ma w nazwisku drugą literę a.**  
 
-```
-SELECT * FROM ksiazki WHERE autor LIKE "_a%";
+```mysql
+SELECT *  
+FROM   ksiazki  
+WHERE  autor LIKE "_a%";
 ```
 
   
 Klauzula **DISTINCT** powoduje usunięcie powtarzających się wierszy.  
 Proszę wyświetlić z jakich województw są studenci.  
 
-```
-SELECT wojewodztwo FROM student;
+```mysql
+SELECT wojewodztwo  
+FROM   student;
 ```
 
   
@@ -393,8 +459,9 @@ W wyniku wykonania się instrukcji otrzymamy następujące wyniki:
 
 **Przykład zastosowania klauzuli DISTINCT**. Gdy zastosujemy klauzulę DISTINCT wynik będzie inny:  
 
-```
-SELECT DISTINCT wojewodztwo FROM student;
+```mysql
+SELECT DISTINCT wojewodztwo  
+FROM   student;
 ```
 
   
@@ -427,22 +494,29 @@ Opcjonalna klauzula **HAVING** pozwala wybrać wiersze, w których wynik dzia�
 
 **Przykład:**  
 
-```
+```mysql
 SELECT count(id_student) AS "Liczba studentów", nazwa FROM student, wydzial WHERE student.id_wydzial = wydzial.id_wydzial GROUP By wydzial.nazwa;
 ```
 
   
 Wykorzystanie klauzuli HAVING:  
 
-```
-SELECT COUNT(id_student) AS "Liczba studentów", wydzial.nazwa FROM student, wydzial WHERE student.id_wydzial = wydzial.id_wydzial GROUP BY wydzial.nazwa HAVING COUNT(id_student) > 2 ORDER BY wydzial.nazwa DESC;
+```mysql
+SELECT _Count_(id_student) AS "Liczba studentów",  
+       nazwa  
+FROM   student,  
+       wydzial  
+WHERE  student.id_wydzial = wydzial.id_wydzial  
+GROUP  BY wydzial.nazwa;
 ```
 
 Klauzula **ORDER BY** służy do sortowania wyników według zadanej kolumny rosnąco (ASC) lub malejąco (DESC).  
 **Przykład:**  
 
-```
-SELECT nazwisko FROM student ORDER BY rok_urodzenia ASC;
+```mysql
+SELECT nazwisko  
+FROM   student  
+ORDER  BY rok_urodzenia ASC;
 ```
 
   
@@ -450,8 +524,11 @@ SELECT nazwisko FROM student ORDER BY rok_urodzenia ASC;
 Klauzula **LIMIT** służy do ograniczenia ilości wyświetlanych wyników.  
 **Przykład:**  
 
-```
-SELECT nazwisko FROM student ORDER BY rok_urodzenia ASC LIMIT 1;
+```mysql
+SELECT nazwisko  
+FROM   student  
+ORDER  BY rok_urodzenia ASC  
+LIMIT  1;
 ```
 
   
@@ -487,22 +564,22 @@ SELECT nazwisko FROM student ORDER BY rok_urodzenia ASC LIMIT 1;
 
   
 
-|Funkcja|Opis|
-|---|---|
-|ASCII(x)|Zwraca kod ASCII pierwszego znaku ciągu x lub 0, gdy ciąg ma zerową długość lub gdy ma wartość NULL.|
-|CHAR(x,y,...)|Zwraca ciąg będący złączeniem sekwencji wartości numerycznych traktowanych jako kody ASCII poszczególnych znaków.|
-|CONCAT(x,y,...)|Zwraca ciąg będący złączeniem ciągów podanych jako argumenty lub NULL, jeżeli choć jeden z argumentów ma wartość NULL.|
-|FORMAT(x,y)|Formatuje liczbę x jako ciąg; formatowana liczba zawiera y miejsc dziesiętnych.|
-|INSTR(x,y)|Zwraca pozycję podciągu y w ciągu x.|
-|LEFT(x,y)|Zwraca y znaków z lewej strony ciągu x.|
-|LENGTH(x)|Zwraca długość ciągu x.|
-|LOWER(x)|Zwraca ciąg x skonwertowany do zapisu małymi literami.|
-|MID(x,p,l)|Z ciągu x zwraca l znaków rozpoczynając od pozycji p; pierwszy znak ciągu znajduje się na pozycji 1.|
-|RIGHT(x,y)|Zwraca y znaków z prawej strony ciągu x.|
-|RTRIM(x)|Usuwa nadmiarowe spacje z końca ciągu x.|
-|SUBSTR(x,p,l)|Zwraca ciąg rozpoczynający się na pozycji p w ciągu x, którego długość jest mniejsza lub równa l; jeżeli nie zostanie podana wartość l, zwracane są wszystkie znaki od pozycji p do końca ciągu.|
-|TRIM(x)|Usuwa nadmiarowe spacje na początku i końcu ciągu x.|
-|UPPER(s)|Konwertuje ciąg na zapisany wielkimi literami|
+| Funkcja             | Opis                                                                                                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ASCII(x)**        | Zwraca kod ASCII pierwszego znaku ciągu x lub 0, gdy ciąg ma zerową długość lub gdy ma wartość NULL.                                                                                             |
+| **CHAR(x,y,...)**   | Zwraca ciąg będący złączeniem sekwencji wartości numerycznych traktowanych jako kody ASCII poszczególnych znaków.                                                                                |
+| **CONCAT(x,y,...)** | Zwraca ciąg będący złączeniem ciągów podanych jako argumenty lub NULL, jeżeli choć jeden z argumentów ma wartość NULL.                                                                           |
+| **FORMAT(x,y)**     | Formatuje liczbę x jako ciąg; formatowana liczba zawiera y miejsc dziesiętnych.                                                                                                                  |
+| **INSTR(x,y)**      | Zwraca pozycję podciągu y w ciągu x.                                                                                                                                                             |
+| **LEFT(x,y)**       | Zwraca y znaków z lewej strony ciągu x.                                                                                                                                                          |
+| **LENGTH(x)**       | Zwraca długość ciągu x.                                                                                                                                                                          |
+| **LOWER(x)**        | Zwraca ciąg x skonwertowany do zapisu małymi literami.                                                                                                                                           |
+| **MID(x,p,l)**      | Z ciągu x zwraca l znaków rozpoczynając od pozycji p; pierwszy znak ciągu znajduje się na pozycji 1.                                                                                             |
+| **RIGHT(x,y)**      | Zwraca y znaków z prawej strony ciągu x.                                                                                                                                                         |
+| **RTRIM(x)**        | Usuwa nadmiarowe spacje z końca ciągu x.                                                                                                                                                         |
+| **SUBSTR(x,p,l)**   | Zwraca ciąg rozpoczynający się na pozycji p w ciągu x, którego długość jest mniejsza lub równa l; jeżeli nie zostanie podana wartość l, zwracane są wszystkie znaki od pozycji p do końca ciągu. |
+| **TRIM(x)**         | Usuwa nadmiarowe spacje na początku i końcu ciągu x.                                                                                                                                             |
+| **UPPER(s)**        | Konwertuje ciąg na zapisany wielkimi literami                                                                                                                                                    |
 
   
 
@@ -510,28 +587,28 @@ SELECT nazwisko FROM student ORDER BY rok_urodzenia ASC LIMIT 1;
 
   
 
-|Funkcja|Opis|
-|---|---|
-|DAYOFWEEK(data)|Zwraca dzień tygodnia, przyjmując niedzielę jako 1.|
-|DAYOFMONTH(data)|Zwraca dzień miesiąca, rozpoczynając od 1.|
-|DAYOFYEAR(data)|Zwraca kolejny dzień roku, rozpoczynając od 1.|
-|MONTH(data)|Zwraca miesiąc rozpoczynając od 1.|
-|DAYNAME(data)|Zwraca nazwę dnia tygodnia jako ciąg znaków.|
-|MONTHNAME(data)|Zwraca nazwę miesiąca jako ciąg znaków.|
-|YEAR(data)|Zwraca rok.|
-|HOUR(czas)|Zwraca godzinę.|
-|MINUTE(czas)|Zwraca minuty.|
-|SECOND(czas)|Zwraca sekundy.|
-|DATE_ADD(data, INTERVAL wyrażenie typ)|Dodaje do daty okres zadawany poprzez wyrażenie INTERVAL, np.: DATE_ADD(NOW(), INTERVAL 1 MONTH).|
-|DATE_SUB(data, INTERVAL wyrażenie typ)|Odejmuje od daty jakiś okres.|
-|TO_DAYS(data)|Przelicza datę na liczbę dni od roku 0.|
-|FROM_DAYS(data)|Przelicza ilość dni na datę.|
-|SEC_TO_TIME(sekundy)|Przelicza ilość sekund na wartość typu czas.|
-|TIME_TO_SEC(czas)|Przelicza wartość typu czas na ilość sekund.|
-|DATE_FORMAT(data, format)|Formatuje datę|
-|CURDATE()|Zwraca bieżącą datę.|
-|CURTIME()|Zwraca bieżący czas.|
-|NOW()|Zwraca informację typu TIMESTAMP, zawierającą bieżącą datę i czas.|
+| Funkcja                                | Opis                                                                                              |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **DAYOFWEEK(data)**                        | Zwraca dzień tygodnia, przyjmując niedzielę jako 1.                                               |
+| **DAYOFMONTH(data)**                       | Zwraca dzień miesiąca, rozpoczynając od 1.                                                        |
+| **DAYOFYEAR(data)**                        | Zwraca kolejny dzień roku, rozpoczynając od 1.                                                    |
+| **MONTH(data)**                            | Zwraca miesiąc rozpoczynając od 1.                                                                |
+| **DAYNAME(data)**                          | Zwraca nazwę dnia tygodnia jako ciąg znaków.                                                      |
+| **MONTHNAME(data)**                        | Zwraca nazwę miesiąca jako ciąg znaków.                                                           |
+| **YEAR(data)**                             | Zwraca rok.                                                                                       |
+| **HOUR(czas)**                             | Zwraca godzinę.                                                                                   |
+| **MINUTE(czas)**                           | Zwraca minuty.                                                                                    |
+| **SECOND(czas)**                           | Zwraca sekundy.                                                                                   |
+| **DATE_ADD(data, INTERVAL wyrażenie typ)** | Dodaje do daty okres zadawany poprzez wyrażenie INTERVAL, np.: DATE_ADD(NOW(), INTERVAL 1 MONTH). |
+| **DATE_SUB(data, INTERVAL wyrażenie typ)** | Odejmuje od daty jakiś okres.                                                                     |
+| **TO_DAYS(data)**                          | Przelicza datę na liczbę dni od roku 0.                                                           |
+| **FROM_DAYS(data)**                        | Przelicza ilość dni na datę.                                                                      |
+| **SEC_TO_TIME(sekundy)**                   | Przelicza ilość sekund na wartość typu czas.                                                      |
+| **TIME_TO_SEC(czas)**                      | Przelicza wartość typu czas na ilość sekund.                                                      |
+| **DATE_FORMAT(data, format)**              | Formatuje datę                                                                                    |
+| **CURDATE()**                              | Zwraca bieżącą datę.                                                                              |
+| **CURTIME()**                              | Zwraca bieżący czas.                                                                              |
+| **NOW()**                                  | Zwraca informację typu TIMESTAMP, zawierającą bieżącą datę i czas.                                |
 
   
 
@@ -539,30 +616,20 @@ SELECT nazwisko FROM student ORDER BY rok_urodzenia ASC LIMIT 1;
 
   
 
-|Ciąg|Znaczenie|
-|---|---|
-|%M|Nazwa miesiąca (January - December).|
-|%W|Nazwa dnia (Sunday - Saturday).|
-|%D|Dzień miesiąca z angielską końcówką (1st, 2nd, 3rd, ...).|
-|%Y|Rok w postaci czterocyfrowej.|
-|%a|Skrót nazwy dnia tygodnia (Sun - Sat).|
-|%m|Miesiąc jako liczba (01 - 12).|
-|%b|Skrót nazwy miesiąca (Jan - Dec).|
-|%j|Dzień w roku (001 - 366).|
-|%H|Godzina (00 - 23).|
-|%i|Minuta jako liczba (00 - 59).|
-|%T|Czas w formacie 24 godzinnym (gg:mm:ss).|
-|%S|Sekundy (00 - 59).|
-
-  
 
 ### Aliasy
 
   
 Alias to inaczej inna nazwa tabeli, kolumny. Przykład:  
 
-```
-SELECT s.imie AS "Imię", s.nazwisko AS "Nazwisko", w.nazwa AS "Wydział" FROM student AS s, wydzial AS w WHERE s.id_student = 1 AND s.id_wydzial = w.id_wydzial;
+```sql
+SELECT s.imie     AS "Imię",  
+       s.nazwisko AS "Nazwisko",  
+       w.nazwa    AS "Wydział"  
+FROM   student AS s,  
+       wydzial AS w  
+WHERE  s.id_student = 1  
+       AND s.id_wydzial = w.id_wydzial;
 ```
 
   
@@ -587,19 +654,17 @@ W przykładzie tym wykorzystaliśmy aliasy w dwóch miejscach - przy nazwie kolu
 
 Złożone zapytanie ponieważ operuje na co najmniej dwóch tabelach. W poniższym przykładzie wykorzystamy tą samą bazę danych o nazwie studia, ale będziemy korzystać z trzech tabel w celu uzyskania potrzebnych informacji.
 
-|Lp.|Pytanie|Rozwiązanie|Wynik|
-|---|---|---|---|
-|1|Pokaż imię, nazwisko wszystkich studentów z Wydziału Zarządzania.|```<br>SELECT imie, nazwisko FROM student, wydzial<br>WHERE student.id_wydzial = wydzial.id_wydzial<br>AND wydzial.id_wydzial = 3;<br>```|[![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select1.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select1.png)|
-|2|Pokaż imię, nazwisko i miejscowość wszystkich studentów, którzy wybrali kierunek Informatyka Stosowana.|```<br>SELECT imie, nazwisko, miejscowosc FROM student, kierunek<br>WHERE student.id_kierunek = kierunek.id_kierunek<br>AND kierunek.id_kierunek = 4;<br>```|[![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select2.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select2.png)|
-|3|Pokaż wszystkie kierunki z Wydziału Informatyki.|```<br>SELECT kierunek.nazwa FROM kierunek, wydzial<br>WHERE kierunek.id_wydzial = wydzial.id_wydzial<br>AND wydzial.id_wydzial = 1;<br>```|[![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select3.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select3.png)|
-|4|Pokaż po ilu studentow jest na każdym wydziale.|```<br>SELECT COUNT(id_student) AS "Liczba studentów", nazwa<br>FROM student, wydzial<br>WHERE student.id_wydzial = wydzial.id_wydzial<br>GROUP By wydzial.nazwa;<br>```|[![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select4.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select4.png)|
-|5|Pokaż wszystkie wydziały, gdzie jest więcej niż 2 studentow posortowane malejąco po nazwie wydziału.|```<br>SELECT COUNT(id_student) AS "Liczba studentów", wydzial.nazwa<br>FROM student, wydzial<br>WHERE student.id_wydzial = wydzial.id_wydzial<br>GROUP BY wydzial.nazwa HAVING COUNT(id_student) > 2<br>ORDER BY wydzial.nazwa DESC;<br>```|[![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select5.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select5.png)|
+| Lp. | Pytanie                                                                                                 | Rozwiązanie                                                                                                                                                                                                                                                                  | Wynik                                                                                                                                                         |
+| --- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Pokaż imię, nazwisko wszystkich studentów z Wydziału Zarządzania.                                       | SELECT imie, nazwisko, miejscowosc FROM student, kierunek<br>WHERE student.id_kierunek = kierunek.id_kierunek<br>AND kierunek.id_kierunek = 4;                                                                                                                               | [![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select1.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select1.png) |
+| 2   | Pokaż imię, nazwisko i miejscowość wszystkich studentów, którzy wybrali kierunek Informatyka Stosowana. | SELECT imie,  <br>       nazwisko,  <br>       miejscowosc  <br>FROM   student,  <br>       kierunek  <br>WHERE  student.id_kierunek = kierunek.id_kierunek  <br>AND    kierunek.id_kierunek =                                                                               | [![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select2.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select2.png) |
+| 3   | Pokaż wszystkie kierunki z Wydziału Informatyki.                                                        | SELECT kierunek.nazwa  <br>FROM   kierunek,  <br>       wydzial  <br>WHERE  kierunek.id_wydzial = wydzial.id_wydzial  <br>       AND wydzial.id_wydzial = 1;                                                                                                                 | [![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select3.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select3.png) |
+| 4   | Pokaż po ilu studentow jest na każdym wydziale.                                                         | SELECT _Count_(id_student) AS "Liczba studentów",  <br>       nazwa  <br>FROM   student,  <br>       wydzial  <br>WHERE  student.id_wydzial = wydzial.id_wydzial  <br>GROUP  BY wydzial.nazwa;                                                                               | [![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select4.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select4.png) |
+| 5   | Pokaż wszystkie wydziały, gdzie jest więcej niż 2 studentow posortowane malejąco po nazwie wydziału.    | SELECT _Count_(id_student) AS "Liczba studentów",  <br>       wydzial.nazwa  <br>FROM   student,  <br>       wydzial  <br>WHERE  student.id_wydzial = wydzial.id_wydzial  <br>GROUP  BY wydzial.nazwa  <br>HAVING _Count_(id_student) > 2  <br>ORDER  BY wydzial.nazwa DESC; | [![](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select5.png "konsola")](https://home.agh.edu.pl/~pamalino/programowanie/mysql/img/Select5.png) |
 
 [Zadania do wykonania](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#collapseExample3) [Pytania sprawdzające](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#collapseExample4)
 
 # Zapytanie INSERT, UPDATE
-
-  
 
 ### Zapytanie INSERT
 
@@ -609,48 +674,68 @@ Składnia zapytania INSERT wygląda następująco:
 INSERT INTO nazwa_tabeli (kolumna1, kolumna2, ... , kolumnaN) VALUES (wartość1, wartość2, ... , warośćN);  
 **Przykład 1:**  
 
-```
-INSERT INTO kierunek (id_kierunek, nazwa, id_wydzial) VALUES (NULL, "Komputerowe Wspomaganie Procesów Inżynierskich", 5);
+```mysql
+INSERT INTO kierunek  
+            (id_kierunek,  
+             nazwa,  
+             id_wydzial)  
+VALUES      (NULL,  
+             "komputerowe wspomaganie procesow inzynierskich",  
+             5);
 ```
 
-  
 **Przykład 2:**  
 Równoważna instrukcja wpisująca dane do wszystkich kolumn tabeli kierunek wygląda następująco:  
 
-```
-INSERT INTO kierunek VALUES (NULL, "Komputerowe Wspomaganie Procesów Inżynierskich", 5);
+```mysql
+INSERT INTO kierunek  
+VALUES      (NULL,  
+             "komputerowe wspomaganie proces�w in�ynierskich",  
+             5);
 ```
 
   
-
 W tej wersji musimy pamiętać by wartości umieszczać zgodnie z kolejnością kolumn. Jeżeli chcemy uzupełnić cały wiersz danej tabeli, to nie musimy specyfikować, które kolumny będziemy uzupełniać po nazwie tabeli, ale musimy pamiętać o odpowiedniej kolejności.  
 Kolejność wpisywania kolumn jest dowolna, ale muszą one korespondować z wpisywanymi wartościami.
-
   
 **Przykład 3:**  
 Do tabeli możemy wprowadzić dane wybrane przez nas. Przykład:  
 
-```
-INSERT INTO student (id_student, imie, nazwisko, rok_urodzenia) VALUES (NULL, "Rafał", "Cichoński",1995);
+```mysql
+INSERT INTO student  
+            (id_student,  
+             imie,  
+             nazwisko,  
+             rok_urodzenia)  
+VALUES      (NULL,  
+             "rafał",  
+             "cichowski",  
+             1995);
 ```
 
   
 **Przykład 4:**  
 Za pomocą jednego zapytania INSERT możemy wprowadzić do tabeli więcej niż jeden wiersz.  
 
-```
-INSERT INTO wydzial VALUES
-(NULL, "Wydział Odlewnictwa"),
-(NULL, "Wydział Inżynierii Mechanicznej i Robotyki"),
-(NULL, "Wydział Informatyki, Elektroniki i Telekomunikacji");
+```mysql
+INSERT INTO wydzial  
+VALUES      (NULL,  
+             "wydzia� odlewnictwa"),  
+            (NULL,  
+             "wydzia� in�ynierii mechanicznej i robotyki"),  
+            (NULL,  
+             "wydzia� informatyki, elektroniki i telekomunikacji");
 ```
 
   
 **Przykład 5:**  
 Istnieje jeszcze alternatywna instrukcja INSERT bez słowa VALUES.  
 
-```
-INSERT INTO wydzial SET id_wydzial = NULL, nazwa = "Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej";
+```mysql
+INSERT INTO wydzial  
+SET id_wydzial = NULL,  
+    nazwa =  
+"wydzia� elektrotechniki, automatyki, informatyki i in�ynierii biomedycznej";
 ```
 
   
@@ -667,8 +752,10 @@ UPDATE tabela SET kolumna = wartość WHERE warunek;
 **Przykład 1:**  
 Adam Nowak studiował na Wydziale Fizyki i Informatyki Stosowanej. Był bardzo dobrym studentem. Postanowił się przenieść na Wydział Informatyki. Zapytanie, które musimy wykonać wygląda następująco:  
 
-```
-UPDATE student SET id_wydzial = 1 WHERE id_student = 2;
+```mysql
+UPDATE student  
+SET    id_wydzial = 1  
+WHERE  id_student = 2;
 ```
 
   
@@ -677,8 +764,9 @@ Gdybyśmy nie umieścili klauzli WHERE nastąpiłaby podmiana wartości id_wydzi
 **Przykład 2:**  
 Skończył się rok akademicki, skończyła się sesja. Wszyscy studenci uzyskali oceny pozytywne. W bazie danych należy dla każdego studenta zwiększyć wartość kolumny rok_studiow. Zapytanie wygląda następująco:  
 
-```
-UPDATE student SET rok_studiow = rok_studiow + 1;
+```mysql
+UPDATE student  
+SET    rok_studiow = rok_studiow + 1;
 ```
 
   
@@ -686,17 +774,22 @@ W typ przypadku każdy student awansował i nie potrzebujemy specyfikować warun
   
 **Przykład 3:**  
 Pani Agnieszka Borówka z Wydziału Zarządzania skończyła urlop dziekański i powróciła na studia. Należy zaktualizować w kolumnie status z wartości urlop wartość na student. Zapytanie wygląda następująco:  
-
-```
-UPDATE student SET status = "student" WHERE id_student = 5;
+```mysql
+UPDATE student  
+SET    status = "student"  
+WHERE  id_student = 5;
 ```
 
   
 **Przykład 4:**  
 Pani Magdalena Jędraszek wyszła za mąż, zmieniła nazwisko na Kowalczyk i przeprowadziła się do Krakowa. Zapytanie wygląda następująco:  
 
-```
-UPDATE student SET nazwisko = "Kowalczyk", miejscowosc = "Kraków", wojewodztwo = "małopolskie" WHERE id_student = 9;
+```mysql
+UPDATE student  
+SET    nazwisko = "kowalczyk",  
+       miejscowosc = "krak�w",  
+       wojewodztwo = "ma�opolskie"  
+WHERE  id_student = 9;
 ```
 
 [Zadania do wykonania](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#collapseExample5) [Pytania sprawdzające](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#collapseExample6)
@@ -716,21 +809,21 @@ DROP DATABASE/TABLE/VIEW
 **Przykład 1:**  
 Proszę usunąć całą bazę danych magazyn.  
 
-```
+```mysql
 DROP DATABASE magazyn;
 ```
 
 **Przykład 2:**  
 Proszę usunąć tabelę student.  
 
-```
+```mysql
 DROP TABLE student;
 ```
 
 **Przykład 3:**  
 Proszę usunąć widok miasta.  
 
-```
+```mysql
 DROP VIEW miasta;
 ```
 
@@ -747,8 +840,9 @@ DELETE FROM tabela WHERE warunek;
 **Przykład 1:**  
 Proszę usunąć z tabeli książki, pozycję o id = 88;  
 
-```
-DELETE FROM ksiazki WHERE id = 88;
+```mysql
+DELETE FROM ksiazki  
+WHERE  id = 88;
 ```
 
   
@@ -756,7 +850,7 @@ DELETE FROM ksiazki WHERE id = 88;
 **Przykład 2:**  
 Proszę usunąć wszystkie wiersze z tabeli samochody  
 
-```
+```mysql
 DELETE FROM samochody;
 ```
 
@@ -768,7 +862,7 @@ TRUNCATE TABLE nazwa_tabeli;
   
 **Przykład 3:**  
 
-```
+```mysql
 TRUNCATE TABLE samochody;
 ```
 
@@ -777,8 +871,10 @@ TRUNCATE TABLE samochody;
 **Przykład 4:**  
 Proszę usunąć z tabeli studenci najstarszego studenta.  
 
-```
-DELETE FROM student ORDER BY rok_urodzenia LIMIT 1;
+```mysql
+DELETE FROM student  
+ORDER BY rok_urodzenia  
+LIMIT 1;
 ```
 
 [Zadania do wykonania](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#drop_zadania) [Pytania sprawdzające](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#drop_pytania)
@@ -793,8 +889,9 @@ Instrukcja **ALTER** służy do modyfikowania struktury tabeli. Możemy dodawa
 **Dodawanie kolumny**  
   
 
-```
-ALTER TABLE ksiazki ADD COLUMN rok_wydania int AFTER wydawnictwo;
+```mysql
+ALTER TABLE ksiazki  
+  ADD COLUMN rok_wydania _INT_ after wydawnictwo;
 ```
 
   
@@ -805,7 +902,7 @@ Instrukcja ta dodaje kolumnę rok_wydania typu całkowitego do tabeli ksiazki za
 **Usuwanie kolumny**  
   
 
-```
+```mysql
 ALTER TABLE ksiazki DROP COLUMN rok_wydania;
 ```
 
@@ -817,8 +914,9 @@ Instrukcja ta usuwa kolumnę rok_wydania z tabeli ksiazki.
 **Zmiana kolumny**  
   
 
-```
-ALTER TABLE ksiazki CHANGE COLUMN tytul tytul_ksiazki varchar(200);
+```mysql
+ALTER TABLE ksiazki  
+  CHANGE COLUMN tytul tytul_ksiazki _VARCHAR_(200);
 ```
 
   
@@ -829,8 +927,9 @@ Instrukcja ta zmienia kolumnę tytul na kolumnę tytul_ksiazki.
 **Zmiana nazwy tabeli**  
   
 
-```
-ALTER TABLE ksiazki RENAME AS ksiegozbior;
+```mysql
+ALTER TABLE ksiazki  
+  RENAME AS ksiegozbior;
 ```
 
   
@@ -841,7 +940,7 @@ Instrukcja ta zmienia nazwę tabeli z ksiazki na ksiegozbior.
 **Dodanie klucza podstawowego**  
   
 
-```
+```mysql
 ALTER TABLE ksiazki ADD PRIMARY KEY (autor);
 ```
 
@@ -853,8 +952,9 @@ Instrukcja ta dodaje klucz podstawowy (kolumna autor) do tabeli ksiazki.
 **Usuwanie klucza podstawowego**  
   
 
-```
-ALTER TABLE ksiazki DROP PRIMARY KEY;
+```mysql
+ALTER TABLE ksiazki  
+  DROP PRIMARY KEY;
 ```
 
   
@@ -1018,7 +1118,7 @@ Poziomy izolacji transakcji (wymienione w kolejności rosnącej szczelności izo
 
 Utwórz konto użytkownika student pracującego lokalnie z hasłem: haslo.
 
-```
+```mysql
 CREATE USER student@localhost IDENTIFIED BY 'haslo';
 ```
 
@@ -1032,7 +1132,7 @@ student@localhost - oznacza użytkownik@host
 
 Usuń konto użytkownika student na localhost
 
-```
+```mysql
 DROP USER student@localhost;
 ```
 
@@ -1044,7 +1144,7 @@ DROP USER student@localhost;
 
 Nadaj wszystkie uprawnienia dla wszystkich baz danych i dla wszystkich tabel dla użytkownika student pracującego na localhost
 
-```
+```mysql
 GRANT ALL  ON *.* TO student@localhost
 ```
 
@@ -1058,7 +1158,7 @@ GRANT ALL  ON *.* TO student@localhost
 
 Odbierz wszystkie uprawnienia dla wszystkich baz danych i dla wszystkich tabel użytkownikowi student pracującemu na localhost
 
-```
+```mysql
 REVOKE ALL ON *.* from student@localhost;
 ```
 
@@ -1110,14 +1210,14 @@ Składnia polecenia mysqldump
 **Przykład:** - Proszę utworzyć kopię zapasową bazy danych biblioteka.  
   
 
-```
+```bash
 mysqldump -u root biblioteka > biblioteka.sql
 ```
 
   
   
 
-```
+```bash
 -- MySQL dump 10.16  Distrib 10.1.34-MariaDB, for Win32 (AMD64)
 --
 -- Host: localhost    Database: biblioteka
@@ -1281,7 +1381,7 @@ Kopię zapasową możemy również wykonać przy pomocy phpMyAdmin.
 
 **Przykład:** - Proszę odtworzyć kopię zapasową bazy danych biblioteka.
 
-```
+```bash
 mysql -u root biblioteka_test < biblioteka.sql
 ```
 
@@ -1416,4 +1516,4 @@ Kolumna nazwa_wydzialu zależy nie tylko od klucza głównego czyli id_student, 
 
 [Zadania do wykonania](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#normalizacja_zadania) [Pytania sprawdzające](https://home.agh.edu.pl/~pamalino/programowanie/mysql/#normalizacja_pytania)
 
-© Wszelkie prawa zastrzeżone. Paweł Malinowski - 2018. [_pamalino@agh.edu.pl_](mailto:%20pamalino@agh.edu.pl), współpraca [Smart Foundry](https://smart-foundry.ai/)
+© Wszelkie prawa zastrzeżone. Paweł Malinowski - 2018. [_pamalino@agh.edu.pl_](mailto: pamalino@agh.edu.pl), współpraca [Smart Foundry](https://smart-foundry.ai/)
