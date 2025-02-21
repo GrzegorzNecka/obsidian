@@ -68,4 +68,60 @@ Available since 2022. Polyfill available
 2. [https://css-tricks.com/css-cascade-layers/](https://css-tricks.com/css-cascade-layers/)
 3. [https://www.oddbird.net/2022/06/21/cascade-layers-polyfill/](https://www.oddbird.net/2022/06/21/cascade-layers-polyfill/)
 
-28 min
+
+Available since 2022. Polyfill available
+
+![[Pasted image 20250220150230.png]]
+
+![[Pasted image 20250220150315.png]]
+
+```css
+@import url(headings.css) layer(default);
+@import url(links.css) layer(default);
+@import url(links-dimmed.css) layer(dimmed);
+
+@layer default { audio[controls] { display: block; } }
+
+```
+
+# CSS Nesting! [1](https://www.fricze.com/@@base@@#fn1 "see footnote")
+
+```css
+// that's native CSS! 🥳
+input {
+  /* styles for input not in a label  */
+  border: tomato 2px solid;
+}
+label {
+  /* styles for label */
+  font-family: system-ui;
+  font-size: 1.25rem;
+  & input {
+    /* styles for input in a label  */
+    border: blue 2px dashed;
+  }
+}
+```
+
+1. [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting)
+
+
+## Individual transform properties [1](https://www.fricze.com/@@base@@#fn1 "see footnote")
+
+```css
+// old transform property
+.logo {
+    transform: rotate(45deg) scale(2) translate(40px, 0);
+}
+
+// new, individual properties
+.logo {
+    rotate: 45deg;
+    scale: 2;
+    translate: 40px, 0;
+}
+```
+
+1. [https://blog.logrocket.com/deep-dive-css-individual-transform-properties](https://blog.logrocket.com/deep-dive-css-individual-transform-properties/)
+
+

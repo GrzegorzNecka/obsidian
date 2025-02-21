@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "f4153f5585d9218c",
+        "id": "6f67949e17f5dd61",
         "type": "tabs",
         "children": [
           {
-            "id": "d732d01c7a8607e4",
+            "id": "ea9b8459162385a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/responsive.md",
+                "file": "CSS interop/Interop.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "responsive"
-            }
-          },
-          {
-            "id": "c2e96312a42d9160",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSS/syntax improvements.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "syntax improvements"
+              "title": "Interop"
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -189,20 +174,34 @@
       "templates:Wstaw szablon": false
     }
   },
-  "active": "c2e96312a42d9160",
+  "active": "ea9b8459162385a5",
   "lastOpenFiles": [
-    "CSS/animation.md",
-    "CSS/syntax improvements.md",
-    "CSS/performance.md",
-    "CSS/layots.md",
-    "CSS/responsive.md",
+    "CSS interop/layouts.md",
+    "CSS interop/Interop.md",
+    "CSS interop/animation.md",
+    "CSS interop/responsive.md",
+    "CSS interop/performance.md",
+    "CSS interop/syntax improvements.md",
+    "CSS interop/typography.md",
+    "JavaScript/functional features.md",
+    "CSS interop/formularze.md",
+    "DOM API/features.md",
+    "DOM API",
+    "JavaScript/events.md",
+    "JavaScript/array.md",
+    "HTML features you might not be using.md",
+    "Pasted image 20250220151819.png",
+    "Pasted image 20250220151815.png",
+    "Pasted image 20250220151811.png",
+    "Pasted image 20250220151726.png",
+    "HTML",
+    "Pasted image 20250220150315.png",
+    "Pasted image 20250220150230.png",
     "container-query.svg",
     "Pasted image 20250219150421.png",
     "Pasted image 20250219150410.png",
     "Pasted image 20250219150315.png",
-    "JavaScript/events.md",
-    "CSS",
-    "JavaScript/array.md",
+    "CSS interop",
     "Opanuj Frontend/2. Wzorce i dobre praktyki/2.2 Obsługa wielu zapytań - metody obiektu Promise.md",
     "JavaScript",
     "SQL/N+1.md",
@@ -217,27 +216,13 @@
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Zarządzanie stanem lokalnym i współdzielonym.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.4 Czym jest zarządzanie stanem na frontndzie.md",
-    "Pasted image 20241213090210 1.png",
-    "Pasted image 20241213085545.png",
-    "Pasted image 20241213090210.png",
-    "Opanuj Frontend/2. Wzorce i dobre praktyki/2.1. Techniki komunikacji frontendu z API.md",
-    "21-08-2024.md",
-    "Opanuj Frontend/2. Wzorce i dobre praktyki.md",
-    "Opanuj Frontend/Bez nazwy.md",
     "Opanuj Frontend/2. Wzorce i dobre praktyki",
-    "JavaScript DOM/nowości frontend.md",
-    "image 4.webp",
-    "image 3.webp",
-    "Screenshot 2024-11-07 at 16.11.55.png",
     "Bez nazwy.canvas",
     "Bez nazwy 1.canvas",
     "Next Masters/3. Typesafe integracja z GraphQl",
     "Next Masters/6. Zaawansowane formularze i i18n",
     "Next Masters/5. Auth i Self-hosting",
     "JavaScript DOM",
-    "SQL",
-    "Algorytmy",
-    "Wzorce Projektowe"
+    "SQL"
   ]
 }

@@ -1,7 +1,3 @@
-# Projekt interop z nowościami:
-
-https://web.dev/blog/interop-2023?hl=pl
-https://web.dev/blog/interop-2025?hl=pl
 
 ## Subgrid. Full control over your layout
 
