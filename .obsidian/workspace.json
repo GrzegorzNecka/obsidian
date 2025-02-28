@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS interop/Interop.md",
+                "file": "Opanuj Frontend/2. Wzorce i dobre praktyki/2.3 Metryki wydajności a.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interop"
+              "title": "2.3 Metryki wydajności a"
             }
           }
         ],
@@ -176,10 +176,16 @@
   },
   "active": "ea9b8459162385a5",
   "lastOpenFiles": [
+    "image 6.webp",
+    "image 5.webp",
+    "Opanuj Frontend/2. Wzorce i dobre praktyki/2.3 Incydenty na produkcji i obłsuga błędów.md",
+    "Opanuj Frontend/2. Wzorce i dobre praktyki/2.3 Metryki wydajności a.md",
+    "Opanuj Frontend/2. Wzorce i dobre praktyki/2.1. Techniki komunikacji frontendu z API.md",
+    "Opanuj Frontend/2. Wzorce i dobre praktyki/2.2 Obsługa wielu zapytań - metody obiektu Promise.md",
+    "CSS interop/responsive.md",
     "CSS interop/layouts.md",
     "CSS interop/Interop.md",
     "CSS interop/animation.md",
-    "CSS interop/responsive.md",
     "CSS interop/performance.md",
     "CSS interop/syntax improvements.md",
     "CSS interop/typography.md",
@@ -200,9 +206,7 @@
     "container-query.svg",
     "Pasted image 20250219150421.png",
     "Pasted image 20250219150410.png",
-    "Pasted image 20250219150315.png",
     "CSS interop",
-    "Opanuj Frontend/2. Wzorce i dobre praktyki/2.2 Obsługa wielu zapytań - metody obiektu Promise.md",
     "JavaScript",
     "SQL/N+1.md",
     "SQL/MySQL.md",
@@ -212,10 +216,6 @@
     "Excalidraw/Drawing 2025-02-19 08.46.07.excalidraw.md",
     "Excalidraw/Drawing 2025-02-19 08.46.09.excalidraw.md",
     "Opanuj Frontend/1. Wzorce i dobre praktyki/1.3 Wzorce projektowe w warstwie clienta.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.7 Zarządzanie stanem globalnym.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.5 Zarządzanie stanem lokalnym i współdzielonym.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.2 Dobre-praktyki i refaktoryzacja kodu.md",
-    "Opanuj Frontend/1. Wzorce i dobre praktyki/1.1 Wysoka jakość na frontendzie.md",
     "Opanuj Frontend/2. Wzorce i dobre praktyki",
     "Bez nazwy.canvas",
     "Bez nazwy 1.canvas",

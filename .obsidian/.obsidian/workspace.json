@@ -36,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Przeglądarka plików"
@@ -146,12 +147,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Otwórz okno szybkiej zmiany pliku": false,
+      "switcher:Otwórz okno szybkiego wyboru": false,
+      "canvas:Stwórz nową tablicę": false,
+      "daily-notes:Otwórz codzienną notatkę": false,
+      "command-palette:Otwórz listę poleceń": false,
       "graph:Otwórz graf": false,
-      "canvas:Stwórz nowe płótno": false,
-      "daily-notes:Otwórz dzisiejszą notatkę": false,
-      "templates:Wstaw szablon": false,
-      "command-palette:Otwórz paletę poleceń": false
+      "templates:Wstaw szablon": false
     }
   },
   "active": "3b9612267a02d700",
