@@ -1,4 +1,8 @@
 {
   "accentColor": "",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "textFontFamily": "Inter",
+  "baseFontSizeAction": true,
+  "baseFontSize": 16,
+  "monospaceFontFamily": ""
 }
