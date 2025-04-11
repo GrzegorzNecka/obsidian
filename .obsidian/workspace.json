@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opanuj Frontend/3. Inżynieria jakości/Najlepsze praktyki testów e2e.md",
+                "file": "Opanuj Frontend/3. Inżynieria jakości/3.5 Bezpieczna komunikacja z API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Najlepsze praktyki testów e2e"
+              "title": "3.5 Bezpieczna komunikacja z API"
             }
           }
         ],
@@ -176,13 +176,14 @@
   },
   "active": "ea9b8459162385a5",
   "lastOpenFiles": [
+    "Opanuj Frontend/3. Inżynieria jakości/3.4 Najlepsze praktyki testów e2e.md",
+    "Opanuj Frontend/3. Inżynieria jakości/3.5 Bezpieczna komunikacja z API.md",
     "Opanuj Frontend/3. Inżynieria jakości/3.3 Wprowadzenie do testów e2e i Playwright.md",
-    "Opanuj Frontend/3. Inżynieria jakości/Najlepsze praktyki testów e2e.md",
-    "Pasted image 20250401134907.png",
     "Opanuj Frontend/3. Inżynieria jakości/3.2 Testy jednostkowe i testy komponentów.md",
+    "Opanuj Frontend/3. Inżynieria jakości/3.1 Wprowadzenie do testowania oprogramowania.md",
+    "Pasted image 20250401134907.png",
     "Pasted image 20250321090307.png",
     "Pasted image 20250321090257.png",
-    "Opanuj Frontend/3. Inżynieria jakości/3.1 Wprowadzenie do testowania oprogramowania.md",
     "Pasted image 20250311123329.png",
     "Opanuj Frontend/2 Wzorce i dobre praktyki/2.5 Optymalizacja wydajności aplikacji.md",
     "Opanuj Frontend/3. Inżynieria jakości",
@@ -216,7 +217,6 @@
     "SQL/N+1.md",
     "SQL/MySQL.md",
     "Bazy Danych/MySQL.md",
-    "Git/Git Flow - artykuł.md",
     "Opanuj Frontend/2 Wzorce i dobre praktyki",
     "Bez nazwy.canvas",
     "Bez nazwy 1.canvas",
